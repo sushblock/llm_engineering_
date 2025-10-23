@@ -1,0 +1,1 @@
+This component covers the use of guardrails and moderations (input/output). The notebooks are self explanatory and are pulled from cookbooks on OpenAI and refered documentations.

@@ -1,0 +1,2117 @@
+accurate,hallucination,kb_article,chat_history,assistant_response
+True,Pass,"Warranty Policy – Support‑Agent Handling Guide
+*(Applies to all consumer‑facing products sold through our official channels)*
+
+---
+
+## 1.  Opening the Warranty Inquiry
+
+| Step | Action | Notes |
+|------|--------|-------|
+| **1.1** |  Greet the customer and ask the main reason for the warranty call or ticket. | Use a friendly tone: “I’m sorry you’re having trouble. Can you tell me a bit more about what happened?” |
+| **1.2** | Log the ticket number and customer’s contact details in the CRM. | Ensure GDPR/HIPAA compliance if relevant. |
+| **1.3** | Request the original order number, purchase date, and the name of the retailer (if not our own storefront). | This lets us pull the purchase record in the next step. |
+
+---
+
+## 2.  Verify Warranty Eligibility
+
+| Step | Action | Decision Rules |
+|------|--------|----------------|
+| **2.1** | Pull the purchase record from our sales system. | • If status is “Returned” or “Disputed,” proceed to **2.3**. <br>• If record missing, ask the customer where they purchased the item. |
+| **2.2** | Check “Warranty Period” and “Coverage Type” in the order history. | • Standard warranty: 12 months from purchase. <br>• Special coverage (e‑core warranty, extended warranty, etc.) may have different durations. |
+| **2.3** | Verify that the product is a genuine SKU and not a counterfeit or off‑market version. | If the SKU is not in our database, inform the customer that we cannot honor a warranty claim. |
+| **2.4** | Confirm the defect does not fall outside warranty coverage (e.g. accidental damage, misuse, power surges beyond tolerances). | If it is outside coverage, politely explain and offer paid repair if available. |
+
+**Outcome:**  
+- **Eligible** → move to step 3.  
+- **Not Eligible** → close the ticket with a friendly explanation and offer any available paid repair/maintenance options.
+
+---
+
+## 3.  Gather Evidence & Documentation
+
+| Step | Action | Requirements |
+|------|--------|--------------|
+| **3.1** | Ask the customer to upload photos or videos of the defect. | Images should show: <br>• The affected part(s) <br>• Any visible damage or malfunction. |
+| **3.2** | If the product includes software, request the latest firmware version and logs if applicable. | Use the “Log upload” feature or provide a secure link. |
+| **3.3** | Check that the evidence was captured within 24 hours of complaint. | If not, request the best available evidence and proceed, noting the delay in the ticket. |
+
+**Decision:**  
+- **Clear evidence of a manufacturing defect** → proceed to step 4.  
+- **Unclear or insufficient evidence** → ask the customer to send additional photos or offer a troubleshooting session with the field support engineer.
+
+---
+
+## 4.  Determine Remedy
+
+| Step | Action | What to do |
+|------|--------|------------|
+| **4.1** | Identify the remedy type: <br>• **Repair** – in‑house or authorized service center. <br>• **Replacement** – new unit shipped. <br>• **Refund** – if repair or replacement not feasible. | Use the “Remedy Matrix” in the policy manual. |
+| **4.2** | Ask the customer which remedy they prefer (subject to availability and policy). | If the customer wants a replacement but a repair is quicker, explain the time difference and ask for consent. |
+| **4.3** | Confirm the customer’s shipping address and preferred contact times. | Triple‑check for errors; a wrong address will delay the process. |
+
+**Decision Logic:**
+- **Replacement** if: <br>• The defect is in a critical part that cannot be reliably repaired <br>• The unit is out of the factory fault range.  
+- **Repair** if: <br>• The defect is in a minor component <br>• The replacement stock is limited or unavailable.  
+- **Refund** if: <br>• The unit is heavily damaged or beyond repair <br>• The customer prefers a return of money over a new unit.
+
+---
+
+## 5.  Process the Remedy
+
+| Step | Action | Detail |
+|------|--------|--------|
+| **5.1** | Generate a pre‑paid return label. | Use the carrier portal; attach the label to the shipment. |
+| **5.2** | Send the customer an email with: <br>• Return instructions (pick‑up, drop‑off, packaging). <br>• Expected turnaround time for repair or replacement. <br>• Contact number for follow‑up. | Include a printable return label if the carrier does not auto‑generate. |
+| **5.3** | Receive the return: Once in our facility, log the arrival and start the repair or replacement. | Use the “Quality Assurance” workflow to validate defect. |
+| **5.4** | Post‑repair or post‑replacement, test the unit and sign off in the system. | Update the ticket status to “Closed – Fulfilled.” |
+| **5.5** | For refunds: Issue the refund through the original payment method. | Confirm the refund amount and time‑frame (usually 3‑7 business days). |
+
+---
+
+## 6.  Follow‑Up & Closing
+
+| Step | Action | Notes |
+|------|--------|-------|
+| **6.1** | Once the remedy is delivered, send a follow‑up email/ SMS: “Your replacement unit has arrived; please confirm you’re satisfied.” | Offer a short satisfaction survey if possible. |
+| **6.2** | If any issues arise (e.g., new defect), log a new ticket and go back to step 1. | Use the same remedy flow. |
+| **6.3** | Final ticket closure: | • Record the outcome. <br>• Tag the ticket with “Warranty – [remedy type]”. <br>• Send a friendly thank‑you note to the customer. |
+
+---
+
+## 7.  Special Cases & Escalations
+
+| Situation | Action |
+|-----------|--------|
+| **Product purchased abroad** | Verify tax and customs regulations; apply cross‑border warranty if applicable. |
+| **Out‑of‑stock replacement** | Offer a repair with a reasonable ETA, or a refund if the repair cannot proceed within 30 days. |
+| **Accidental damage** | Outside standard warranty; offer paid repair or replacement at a discounted rate. |
+| **High‑value items (>$5,000)** | Escalate to the Warranty Manager for an SLA review. |
+| **Disputed responsibility (user vs. manufacturer)** | Route to a senior field engineer for a technical review. |
+
+---
+
+## 8.  KPI & Metrics
+
+- **First Response Time** – should be ≤ 24 hours for all warranty inquiries.  
+- **Approval to Shipping Time** – Target 7 business days from order creation.  
+- **Customer Satisfaction Score (CSAT)** – Maintain ≥ 90% on warranty repairs.  
+- **Warranty Claim Accuracy** – Target 99% correct remedy selection on the first pass.  
+
+---
+
+### **End of Policy**  
+Follow the steps above for every warranty claim. When in doubt, consult the “Warranty Remedy Matrix” in the internal knowledge base or ask for a manager’s review.","[{'role': 'user', 'content': 'I bought a laptop last month and the screen flickers, can I get it replaced under warranty?'}, {'role': 'assistant', 'content': 'I’m sorry to hear that. Can you confirm your order number and when you purchased it?'}, {'role': 'user', 'content': 'Sure, order #12345, purchased on 15th September 2025.'}]","{'role': 'assistant', 'content': 'Thank you for the details. I’m pulling up your purchase record now. While I do that, could you please upload a photo of the screen flickering? This will help us verify the defect and determine the best remedy for you. Once I confirm the warranty status, I’ll let you know whether you’re eligible for a repair, replacement, or refund, and we’ll walk through the next steps together.'}"
+True,Pass,"Warranty Policy – Support‑Agent Handling Guide
+*(Applies to all consumer‑facing products sold through our official channels)*
+
+---
+
+## 1.  Opening the Warranty Inquiry
+
+| Step | Action | Notes |
+|------|--------|-------|
+| **1.1** |  Greet the customer and ask the main reason for the warranty call or ticket. | Use a friendly tone: “I’m sorry you’re having trouble. Can you tell me a bit more about what happened?” |
+| **1.2** | Log the ticket number and customer’s contact details in the CRM. | Ensure GDPR/HIPAA compliance if relevant. |
+| **1.3** | Request the original order number, purchase date, and the name of the retailer (if not our own storefront). | This lets us pull the purchase record in the next step. |
+
+---
+
+## 2.  Verify Warranty Eligibility
+
+| Step | Action | Decision Rules |
+|------|--------|----------------|
+| **2.1** | Pull the purchase record from our sales system. | • If status is “Returned” or “Disputed,” proceed to **2.3**. <br>• If record missing, ask the customer where they purchased the item. |
+| **2.2** | Check “Warranty Period” and “Coverage Type” in the order history. | • Standard warranty: 12 months from purchase. <br>• Special coverage (e‑core warranty, extended warranty, etc.) may have different durations. |
+| **2.3** | Verify that the product is a genuine SKU and not a counterfeit or off‑market version. | If the SKU is not in our database, inform the customer that we cannot honor a warranty claim. |
+| **2.4** | Confirm the defect does not fall outside warranty coverage (e.g. accidental damage, misuse, power surges beyond tolerances). | If it is outside coverage, politely explain and offer paid repair if available. |
+
+**Outcome:**  
+- **Eligible** → move to step 3.  
+- **Not Eligible** → close the ticket with a friendly explanation and offer any available paid repair/maintenance options.
+
+---
+
+## 3.  Gather Evidence & Documentation
+
+| Step | Action | Requirements |
+|------|--------|--------------|
+| **3.1** | Ask the customer to upload photos or videos of the defect. | Images should show: <br>• The affected part(s) <br>• Any visible damage or malfunction. |
+| **3.2** | If the product includes software, request the latest firmware version and logs if applicable. | Use the “Log upload” feature or provide a secure link. |
+| **3.3** | Check that the evidence was captured within 24 hours of complaint. | If not, request the best available evidence and proceed, noting the delay in the ticket. |
+
+**Decision:**  
+- **Clear evidence of a manufacturing defect** → proceed to step 4.  
+- **Unclear or insufficient evidence** → ask the customer to send additional photos or offer a troubleshooting session with the field support engineer.
+
+---
+
+## 4.  Determine Remedy
+
+| Step | Action | What to do |
+|------|--------|------------|
+| **4.1** | Identify the remedy type: <br>• **Repair** – in‑house or authorized service center. <br>• **Replacement** – new unit shipped. <br>• **Refund** – if repair or replacement not feasible. | Use the “Remedy Matrix” in the policy manual. |
+| **4.2** | Ask the customer which remedy they prefer (subject to availability and policy). | If the customer wants a replacement but a repair is quicker, explain the time difference and ask for consent. |
+| **4.3** | Confirm the customer’s shipping address and preferred contact times. | Triple‑check for errors; a wrong address will delay the process. |
+
+**Decision Logic:**
+- **Replacement** if: <br>• The defect is in a critical part that cannot be reliably repaired <br>• The unit is out of the factory fault range.  
+- **Repair** if: <br>• The defect is in a minor component <br>• The replacement stock is limited or unavailable.  
+- **Refund** if: <br>• The unit is heavily damaged or beyond repair <br>• The customer prefers a return of money over a new unit.
+
+---
+
+## 5.  Process the Remedy
+
+| Step | Action | Detail |
+|------|--------|--------|
+| **5.1** | Generate a pre‑paid return label. | Use the carrier portal; attach the label to the shipment. |
+| **5.2** | Send the customer an email with: <br>• Return instructions (pick‑up, drop‑off, packaging). <br>• Expected turnaround time for repair or replacement. <br>• Contact number for follow‑up. | Include a printable return label if the carrier does not auto‑generate. |
+| **5.3** | Receive the return: Once in our facility, log the arrival and start the repair or replacement. | Use the “Quality Assurance” workflow to validate defect. |
+| **5.4** | Post‑repair or post‑replacement, test the unit and sign off in the system. | Update the ticket status to “Closed – Fulfilled.” |
+| **5.5** | For refunds: Issue the refund through the original payment method. | Confirm the refund amount and time‑frame (usually 3‑7 business days). |
+
+---
+
+## 6.  Follow‑Up & Closing
+
+| Step | Action | Notes |
+|------|--------|-------|
+| **6.1** | Once the remedy is delivered, send a follow‑up email/ SMS: “Your replacement unit has arrived; please confirm you’re satisfied.” | Offer a short satisfaction survey if possible. |
+| **6.2** | If any issues arise (e.g., new defect), log a new ticket and go back to step 1. | Use the same remedy flow. |
+| **6.3** | Final ticket closure: | • Record the outcome. <br>• Tag the ticket with “Warranty – [remedy type]”. <br>• Send a friendly thank‑you note to the customer. |
+
+---
+
+## 7.  Special Cases & Escalations
+
+| Situation | Action |
+|-----------|--------|
+| **Product purchased abroad** | Verify tax and customs regulations; apply cross‑border warranty if applicable. |
+| **Out‑of‑stock replacement** | Offer a repair with a reasonable ETA, or a refund if the repair cannot proceed within 30 days. |
+| **Accidental damage** | Outside standard warranty; offer paid repair or replacement at a discounted rate. |
+| **High‑value items (>$5,000)** | Escalate to the Warranty Manager for an SLA review. |
+| **Disputed responsibility (user vs. manufacturer)** | Route to a senior field engineer for a technical review. |
+
+---
+
+## 8.  KPI & Metrics
+
+- **First Response Time** – should be ≤ 24 hours for all warranty inquiries.  
+- **Approval to Shipping Time** – Target 7 business days from order creation.  
+- **Customer Satisfaction Score (CSAT)** – Maintain ≥ 90% on warranty repairs.  
+- **Warranty Claim Accuracy** – Target 99% correct remedy selection on the first pass.  
+
+---
+
+### **End of Policy**  
+Follow the steps above for every warranty claim. When in doubt, consult the “Warranty Remedy Matrix” in the internal knowledge base or ask for a manager’s review.","[{'role': 'user', 'content': 'I bought a laptop last month and the screen flickers, can I get it replaced under warranty?'}, {'role': 'assistant', 'content': 'I’m sorry to hear that. Can you confirm your order number and when you purchased it?'}, {'role': 'user', 'content': 'Sure, order #12345, purchased on 15th September 2025.'}]","{'role': 'assistant', 'content': 'Thank you for the details. I’m pulling up your purchase record now. While I do that, could you please upload a photo of the screen flickering? This will help us verify the defect and determine the best remedy for you. Once I confirm the warranty status, I’ll let you know whether you’re eligible for a repair, replacement, or refund, and we’ll walk through the next steps together.'}"
+True,Pass,"Warranty Policy – Support‑Agent Handling Guide
+*(Applies to all consumer‑facing products sold through our official channels)*
+
+---
+
+## 1.  Opening the Warranty Inquiry
+
+| Step | Action | Notes |
+|------|--------|-------|
+| **1.1** |  Greet the customer and ask the main reason for the warranty call or ticket. | Use a friendly tone: “I’m sorry you’re having trouble. Can you tell me a bit more about what happened?” |
+| **1.2** | Log the ticket number and customer’s contact details in the CRM. | Ensure GDPR/HIPAA compliance if relevant. |
+| **1.3** | Request the original order number, purchase date, and the name of the retailer (if not our own storefront). | This lets us pull the purchase record in the next step. |
+
+---
+
+## 2.  Verify Warranty Eligibility
+
+| Step | Action | Decision Rules |
+|------|--------|----------------|
+| **2.1** | Pull the purchase record from our sales system. | • If status is “Returned” or “Disputed,” proceed to **2.3**. <br>• If record missing, ask the customer where they purchased the item. |
+| **2.2** | Check “Warranty Period” and “Coverage Type” in the order history. | • Standard warranty: 12 months from purchase. <br>• Special coverage (e‑core warranty, extended warranty, etc.) may have different durations. |
+| **2.3** | Verify that the product is a genuine SKU and not a counterfeit or off‑market version. | If the SKU is not in our database, inform the customer that we cannot honor a warranty claim. |
+| **2.4** | Confirm the defect does not fall outside warranty coverage (e.g. accidental damage, misuse, power surges beyond tolerances). | If it is outside coverage, politely explain and offer paid repair if available. |
+
+**Outcome:**  
+- **Eligible** → move to step 3.  
+- **Not Eligible** → close the ticket with a friendly explanation and offer any available paid repair/maintenance options.
+
+---
+
+## 3.  Gather Evidence & Documentation
+
+| Step | Action | Requirements |
+|------|--------|--------------|
+| **3.1** | Ask the customer to upload photos or videos of the defect. | Images should show: <br>• The affected part(s) <br>• Any visible damage or malfunction. |
+| **3.2** | If the product includes software, request the latest firmware version and logs if applicable. | Use the “Log upload” feature or provide a secure link. |
+| **3.3** | Check that the evidence was captured within 24 hours of complaint. | If not, request the best available evidence and proceed, noting the delay in the ticket. |
+
+**Decision:**  
+- **Clear evidence of a manufacturing defect** → proceed to step 4.  
+- **Unclear or insufficient evidence** → ask the customer to send additional photos or offer a troubleshooting session with the field support engineer.
+
+---
+
+## 4.  Determine Remedy
+
+| Step | Action | What to do |
+|------|--------|------------|
+| **4.1** | Identify the remedy type: <br>• **Repair** – in‑house or authorized service center. <br>• **Replacement** – new unit shipped. <br>• **Refund** – if repair or replacement not feasible. | Use the “Remedy Matrix” in the policy manual. |
+| **4.2** | Ask the customer which remedy they prefer (subject to availability and policy). | If the customer wants a replacement but a repair is quicker, explain the time difference and ask for consent. |
+| **4.3** | Confirm the customer’s shipping address and preferred contact times. | Triple‑check for errors; a wrong address will delay the process. |
+
+**Decision Logic:**
+- **Replacement** if: <br>• The defect is in a critical part that cannot be reliably repaired <br>• The unit is out of the factory fault range.  
+- **Repair** if: <br>• The defect is in a minor component <br>• The replacement stock is limited or unavailable.  
+- **Refund** if: <br>• The unit is heavily damaged or beyond repair <br>• The customer prefers a return of money over a new unit.
+
+---
+
+## 5.  Process the Remedy
+
+| Step | Action | Detail |
+|------|--------|--------|
+| **5.1** | Generate a pre‑paid return label. | Use the carrier portal; attach the label to the shipment. |
+| **5.2** | Send the customer an email with: <br>• Return instructions (pick‑up, drop‑off, packaging). <br>• Expected turnaround time for repair or replacement. <br>• Contact number for follow‑up. | Include a printable return label if the carrier does not auto‑generate. |
+| **5.3** | Receive the return: Once in our facility, log the arrival and start the repair or replacement. | Use the “Quality Assurance” workflow to validate defect. |
+| **5.4** | Post‑repair or post‑replacement, test the unit and sign off in the system. | Update the ticket status to “Closed – Fulfilled.” |
+| **5.5** | For refunds: Issue the refund through the original payment method. | Confirm the refund amount and time‑frame (usually 3‑7 business days). |
+
+---
+
+## 6.  Follow‑Up & Closing
+
+| Step | Action | Notes |
+|------|--------|-------|
+| **6.1** | Once the remedy is delivered, send a follow‑up email/ SMS: “Your replacement unit has arrived; please confirm you’re satisfied.” | Offer a short satisfaction survey if possible. |
+| **6.2** | If any issues arise (e.g., new defect), log a new ticket and go back to step 1. | Use the same remedy flow. |
+| **6.3** | Final ticket closure: | • Record the outcome. <br>• Tag the ticket with “Warranty – [remedy type]”. <br>• Send a friendly thank‑you note to the customer. |
+
+---
+
+## 7.  Special Cases & Escalations
+
+| Situation | Action |
+|-----------|--------|
+| **Product purchased abroad** | Verify tax and customs regulations; apply cross‑border warranty if applicable. |
+| **Out‑of‑stock replacement** | Offer a repair with a reasonable ETA, or a refund if the repair cannot proceed within 30 days. |
+| **Accidental damage** | Outside standard warranty; offer paid repair or replacement at a discounted rate. |
+| **High‑value items (>$5,000)** | Escalate to the Warranty Manager for an SLA review. |
+| **Disputed responsibility (user vs. manufacturer)** | Route to a senior field engineer for a technical review. |
+
+---
+
+## 8.  KPI & Metrics
+
+- **First Response Time** – should be ≤ 24 hours for all warranty inquiries.  
+- **Approval to Shipping Time** – Target 7 business days from order creation.  
+- **Customer Satisfaction Score (CSAT)** – Maintain ≥ 90% on warranty repairs.  
+- **Warranty Claim Accuracy** – Target 99% correct remedy selection on the first pass.  
+
+---
+
+### **End of Policy**  
+Follow the steps above for every warranty claim. When in doubt, consult the “Warranty Remedy Matrix” in the internal knowledge base or ask for a manager’s review.","[{'role': 'user', 'content': 'I bought a laptop last month and the screen flickers, can I get it replaced under warranty?'}, {'role': 'assistant', 'content': 'I’m sorry to hear that. Can you confirm your order number and when you purchased it?'}, {'role': 'user', 'content': 'Sure, order #12345, purchased on 15th September 2025.'}]","{'role': 'assistant', 'content': 'Thank you for the details. I’m pulling up your purchase record now. While I do that, could you please upload a photo of the screen flickering? This will help us verify the defect and determine the best remedy for you. Once I confirm the warranty status, I’ll let you know whether you’re eligible for a repair, replacement, or refund, and we’ll walk through the next steps together.'}"
+True,Pass,"Warranty Policy – Support‑Agent Handling Guide
+*(Applies to all consumer‑facing products sold through our official channels)*
+
+---
+
+## 1.  Opening the Warranty Inquiry
+
+| Step | Action | Notes |
+|------|--------|-------|
+| **1.1** |  Greet the customer and ask the main reason for the warranty call or ticket. | Use a friendly tone: “I’m sorry you’re having trouble. Can you tell me a bit more about what happened?” |
+| **1.2** | Log the ticket number and customer’s contact details in the CRM. | Ensure GDPR/HIPAA compliance if relevant. |
+| **1.3** | Request the original order number, purchase date, and the name of the retailer (if not our own storefront). | This lets us pull the purchase record in the next step. |
+
+---
+
+## 2.  Verify Warranty Eligibility
+
+| Step | Action | Decision Rules |
+|------|--------|----------------|
+| **2.1** | Pull the purchase record from our sales system. | • If status is “Returned” or “Disputed,” proceed to **2.3**. <br>• If record missing, ask the customer where they purchased the item. |
+| **2.2** | Check “Warranty Period” and “Coverage Type” in the order history. | • Standard warranty: 12 months from purchase. <br>• Special coverage (e‑core warranty, extended warranty, etc.) may have different durations. |
+| **2.3** | Verify that the product is a genuine SKU and not a counterfeit or off‑market version. | If the SKU is not in our database, inform the customer that we cannot honor a warranty claim. |
+| **2.4** | Confirm the defect does not fall outside warranty coverage (e.g. accidental damage, misuse, power surges beyond tolerances). | If it is outside coverage, politely explain and offer paid repair if available. |
+
+**Outcome:**  
+- **Eligible** → move to step 3.  
+- **Not Eligible** → close the ticket with a friendly explanation and offer any available paid repair/maintenance options.
+
+---
+
+## 3.  Gather Evidence & Documentation
+
+| Step | Action | Requirements |
+|------|--------|--------------|
+| **3.1** | Ask the customer to upload photos or videos of the defect. | Images should show: <br>• The affected part(s) <br>• Any visible damage or malfunction. |
+| **3.2** | If the product includes software, request the latest firmware version and logs if applicable. | Use the “Log upload” feature or provide a secure link. |
+| **3.3** | Check that the evidence was captured within 24 hours of complaint. | If not, request the best available evidence and proceed, noting the delay in the ticket. |
+
+**Decision:**  
+- **Clear evidence of a manufacturing defect** → proceed to step 4.  
+- **Unclear or insufficient evidence** → ask the customer to send additional photos or offer a troubleshooting session with the field support engineer.
+
+---
+
+## 4.  Determine Remedy
+
+| Step | Action | What to do |
+|------|--------|------------|
+| **4.1** | Identify the remedy type: <br>• **Repair** – in‑house or authorized service center. <br>• **Replacement** – new unit shipped. <br>• **Refund** – if repair or replacement not feasible. | Use the “Remedy Matrix” in the policy manual. |
+| **4.2** | Ask the customer which remedy they prefer (subject to availability and policy). | If the customer wants a replacement but a repair is quicker, explain the time difference and ask for consent. |
+| **4.3** | Confirm the customer’s shipping address and preferred contact times. | Triple‑check for errors; a wrong address will delay the process. |
+
+**Decision Logic:**
+- **Replacement** if: <br>• The defect is in a critical part that cannot be reliably repaired <br>• The unit is out of the factory fault range.  
+- **Repair** if: <br>• The defect is in a minor component <br>• The replacement stock is limited or unavailable.  
+- **Refund** if: <br>• The unit is heavily damaged or beyond repair <br>• The customer prefers a return of money over a new unit.
+
+---
+
+## 5.  Process the Remedy
+
+| Step | Action | Detail |
+|------|--------|--------|
+| **5.1** | Generate a pre‑paid return label. | Use the carrier portal; attach the label to the shipment. |
+| **5.2** | Send the customer an email with: <br>• Return instructions (pick‑up, drop‑off, packaging). <br>• Expected turnaround time for repair or replacement. <br>• Contact number for follow‑up. | Include a printable return label if the carrier does not auto‑generate. |
+| **5.3** | Receive the return: Once in our facility, log the arrival and start the repair or replacement. | Use the “Quality Assurance” workflow to validate defect. |
+| **5.4** | Post‑repair or post‑replacement, test the unit and sign off in the system. | Update the ticket status to “Closed – Fulfilled.” |
+| **5.5** | For refunds: Issue the refund through the original payment method. | Confirm the refund amount and time‑frame (usually 3‑7 business days). |
+
+---
+
+## 6.  Follow‑Up & Closing
+
+| Step | Action | Notes |
+|------|--------|-------|
+| **6.1** | Once the remedy is delivered, send a follow‑up email/ SMS: “Your replacement unit has arrived; please confirm you’re satisfied.” | Offer a short satisfaction survey if possible. |
+| **6.2** | If any issues arise (e.g., new defect), log a new ticket and go back to step 1. | Use the same remedy flow. |
+| **6.3** | Final ticket closure: | • Record the outcome. <br>• Tag the ticket with “Warranty – [remedy type]”. <br>• Send a friendly thank‑you note to the customer. |
+
+---
+
+## 7.  Special Cases & Escalations
+
+| Situation | Action |
+|-----------|--------|
+| **Product purchased abroad** | Verify tax and customs regulations; apply cross‑border warranty if applicable. |
+| **Out‑of‑stock replacement** | Offer a repair with a reasonable ETA, or a refund if the repair cannot proceed within 30 days. |
+| **Accidental damage** | Outside standard warranty; offer paid repair or replacement at a discounted rate. |
+| **High‑value items (>$5,000)** | Escalate to the Warranty Manager for an SLA review. |
+| **Disputed responsibility (user vs. manufacturer)** | Route to a senior field engineer for a technical review. |
+
+---
+
+## 8.  KPI & Metrics
+
+- **First Response Time** – should be ≤ 24 hours for all warranty inquiries.  
+- **Approval to Shipping Time** – Target 7 business days from order creation.  
+- **Customer Satisfaction Score (CSAT)** – Maintain ≥ 90% on warranty repairs.  
+- **Warranty Claim Accuracy** – Target 99% correct remedy selection on the first pass.  
+
+---
+
+### **End of Policy**  
+Follow the steps above for every warranty claim. When in doubt, consult the “Warranty Remedy Matrix” in the internal knowledge base or ask for a manager’s review.","[{'role': 'user', 'content': 'I bought a laptop last month and the screen flickers, can I get it replaced under warranty?'}, {'role': 'assistant', 'content': 'I’m sorry to hear that. Can you confirm your order number and when you purchased it?'}, {'role': 'user', 'content': 'Sure, order #12345, purchased on 15th September 2025.'}]","{'role': 'assistant', 'content': 'Thank you for the details. I’m pulling up your purchase record now. While I do that, could you please upload a photo of the screen flickering? This will help us verify the defect and determine the best remedy for you. Once I confirm the warranty status, I’ll let you know whether you’re eligible for a repair, replacement, or refund, and we’ll walk through the next steps together.'}"
+True,Pass,"Warranty Policy – Support‑Agent Handling Guide
+*(Applies to all consumer‑facing products sold through our official channels)*
+
+---
+
+## 1.  Opening the Warranty Inquiry
+
+| Step | Action | Notes |
+|------|--------|-------|
+| **1.1** |  Greet the customer and ask the main reason for the warranty call or ticket. | Use a friendly tone: “I’m sorry you’re having trouble. Can you tell me a bit more about what happened?” |
+| **1.2** | Log the ticket number and customer’s contact details in the CRM. | Ensure GDPR/HIPAA compliance if relevant. |
+| **1.3** | Request the original order number, purchase date, and the name of the retailer (if not our own storefront). | This lets us pull the purchase record in the next step. |
+
+---
+
+## 2.  Verify Warranty Eligibility
+
+| Step | Action | Decision Rules |
+|------|--------|----------------|
+| **2.1** | Pull the purchase record from our sales system. | • If status is “Returned” or “Disputed,” proceed to **2.3**. <br>• If record missing, ask the customer where they purchased the item. |
+| **2.2** | Check “Warranty Period” and “Coverage Type” in the order history. | • Standard warranty: 12 months from purchase. <br>• Special coverage (e‑core warranty, extended warranty, etc.) may have different durations. |
+| **2.3** | Verify that the product is a genuine SKU and not a counterfeit or off‑market version. | If the SKU is not in our database, inform the customer that we cannot honor a warranty claim. |
+| **2.4** | Confirm the defect does not fall outside warranty coverage (e.g. accidental damage, misuse, power surges beyond tolerances). | If it is outside coverage, politely explain and offer paid repair if available. |
+
+**Outcome:**  
+- **Eligible** → move to step 3.  
+- **Not Eligible** → close the ticket with a friendly explanation and offer any available paid repair/maintenance options.
+
+---
+
+## 3.  Gather Evidence & Documentation
+
+| Step | Action | Requirements |
+|------|--------|--------------|
+| **3.1** | Ask the customer to upload photos or videos of the defect. | Images should show: <br>• The affected part(s) <br>• Any visible damage or malfunction. |
+| **3.2** | If the product includes software, request the latest firmware version and logs if applicable. | Use the “Log upload” feature or provide a secure link. |
+| **3.3** | Check that the evidence was captured within 24 hours of complaint. | If not, request the best available evidence and proceed, noting the delay in the ticket. |
+
+**Decision:**  
+- **Clear evidence of a manufacturing defect** → proceed to step 4.  
+- **Unclear or insufficient evidence** → ask the customer to send additional photos or offer a troubleshooting session with the field support engineer.
+
+---
+
+## 4.  Determine Remedy
+
+| Step | Action | What to do |
+|------|--------|------------|
+| **4.1** | Identify the remedy type: <br>• **Repair** – in‑house or authorized service center. <br>• **Replacement** – new unit shipped. <br>• **Refund** – if repair or replacement not feasible. | Use the “Remedy Matrix” in the policy manual. |
+| **4.2** | Ask the customer which remedy they prefer (subject to availability and policy). | If the customer wants a replacement but a repair is quicker, explain the time difference and ask for consent. |
+| **4.3** | Confirm the customer’s shipping address and preferred contact times. | Triple‑check for errors; a wrong address will delay the process. |
+
+**Decision Logic:**
+- **Replacement** if: <br>• The defect is in a critical part that cannot be reliably repaired <br>• The unit is out of the factory fault range.  
+- **Repair** if: <br>• The defect is in a minor component <br>• The replacement stock is limited or unavailable.  
+- **Refund** if: <br>• The unit is heavily damaged or beyond repair <br>• The customer prefers a return of money over a new unit.
+
+---
+
+## 5.  Process the Remedy
+
+| Step | Action | Detail |
+|------|--------|--------|
+| **5.1** | Generate a pre‑paid return label. | Use the carrier portal; attach the label to the shipment. |
+| **5.2** | Send the customer an email with: <br>• Return instructions (pick‑up, drop‑off, packaging). <br>• Expected turnaround time for repair or replacement. <br>• Contact number for follow‑up. | Include a printable return label if the carrier does not auto‑generate. |
+| **5.3** | Receive the return: Once in our facility, log the arrival and start the repair or replacement. | Use the “Quality Assurance” workflow to validate defect. |
+| **5.4** | Post‑repair or post‑replacement, test the unit and sign off in the system. | Update the ticket status to “Closed – Fulfilled.” |
+| **5.5** | For refunds: Issue the refund through the original payment method. | Confirm the refund amount and time‑frame (usually 3‑7 business days). |
+
+---
+
+## 6.  Follow‑Up & Closing
+
+| Step | Action | Notes |
+|------|--------|-------|
+| **6.1** | Once the remedy is delivered, send a follow‑up email/ SMS: “Your replacement unit has arrived; please confirm you’re satisfied.” | Offer a short satisfaction survey if possible. |
+| **6.2** | If any issues arise (e.g., new defect), log a new ticket and go back to step 1. | Use the same remedy flow. |
+| **6.3** | Final ticket closure: | • Record the outcome. <br>• Tag the ticket with “Warranty – [remedy type]”. <br>• Send a friendly thank‑you note to the customer. |
+
+---
+
+## 7.  Special Cases & Escalations
+
+| Situation | Action |
+|-----------|--------|
+| **Product purchased abroad** | Verify tax and customs regulations; apply cross‑border warranty if applicable. |
+| **Out‑of‑stock replacement** | Offer a repair with a reasonable ETA, or a refund if the repair cannot proceed within 30 days. |
+| **Accidental damage** | Outside standard warranty; offer paid repair or replacement at a discounted rate. |
+| **High‑value items (>$5,000)** | Escalate to the Warranty Manager for an SLA review. |
+| **Disputed responsibility (user vs. manufacturer)** | Route to a senior field engineer for a technical review. |
+
+---
+
+## 8.  KPI & Metrics
+
+- **First Response Time** – should be ≤ 24 hours for all warranty inquiries.  
+- **Approval to Shipping Time** – Target 7 business days from order creation.  
+- **Customer Satisfaction Score (CSAT)** – Maintain ≥ 90% on warranty repairs.  
+- **Warranty Claim Accuracy** – Target 99% correct remedy selection on the first pass.  
+
+---
+
+### **End of Policy**  
+Follow the steps above for every warranty claim. When in doubt, consult the “Warranty Remedy Matrix” in the internal knowledge base or ask for a manager’s review.","[{'role': 'user', 'content': 'I bought a laptop last month and the screen flickers, can I get it replaced under warranty?'}, {'role': 'assistant', 'content': 'I’m sorry to hear that. Can you confirm your order number and when you purchased it?'}, {'role': 'user', 'content': 'Sure, order #12345, purchased on 15th September 2025.'}]","{'role': 'assistant', 'content': 'Thank you for the details. I’m pulling up your purchase record now. While I do that, could you please upload a photo of the screen flickering? This will help us verify the defect and determine the best remedy for you. Once I confirm the warranty status, I’ll let you know whether you’re eligible for a repair, replacement, or refund, and we’ll walk through the next steps together.'}"
+False,Fail,"1. **Verify Identity and Request**
+   - 1.1. Ask the customer to provide the **primary email address** associated with the account and any **account ID** or **username** they have on file.
+   - 1.2. Request at least **two forms** of identity verification (e.g., last 4 digits of SSN, billing address, or purchase order number).  
+   - 1.3. Prompt the customer to confirm the account deletion request **in writing** (via chat or email). Record the timestamp of the confirmation.
+
+2. **Confirm Eligibility for Deletion**
+   - 2.1. Retrieve the account status from the system:
+        - **Active** – proceed to step 3.
+        - **Pending Deletion** – notify customer that deletion is already in progress; provide estimated completion time.
+        - **Banned/Disabled** – inform customer that the account cannot be deleted until the ban is lifted; direct them to the *Appeals* help center.
+        - **Previously Deleted** – inform customer that the account no longer exists; redirect to *Create a New Account* page.
+
+3. **Explain Data Retention & Implications**
+   - 3.1. Offer a brief overview:
+        - All personal data will **be deleted** within **5 business days** of approval.
+        - **Order history** and **purchase records** are retained for **7 years** for tax and legal purposes, but **linked identifiers** (e.g., customer ID, email) will be removed.
+        - **Transaction records** and **payment references** remain in the payment processor’s secure archive per PCI compliance.
+   - 3.2. Ask the customer if they wish to download a copy of their data prior to deletion:
+        - If **yes**, generate a secure, single‑download ZIP of their data (exported in `.csv` format) and send it via secure link (expiry 48 hrs).
+        - If **no**, proceed to the next step.
+
+4. **Execute Deletion**
+   - 4.1. Place the account on **“Pending Deletion”** status to lock all actions.
+   - 4.2. Create a deletion request in the backend system; assign it to the **Data Privacy** team.
+   - 4.3. Notify the customer via chat/email that deletion has been scheduled and will complete by the end of the next business day.
+
+5. **Post‑Deletion Confirmation**
+   - 5.1. Once deletion is completed, send a confirmation message confirming removal of all personal data.
+   - 5.2. Provide a 48‑hour window in which the customer can **re‑open** the account:
+        - If the customer contacts the support team within this window, they can request account restoration (subject to re‑verification).
+        - After 48 hrs, the account is irrevocably deleted.
+
+6. **Escalation & Dispute Handling**
+   - 6.1. If a customer disputes the deletion order, direct them to the **Data Protection Officer** (DPO) via the *Privacy Complaints* channel.
+   - 6.2. The DPO will review the case within **7 business days**, provide a decision, and contact the customer.
+
+7. **Documentation & Audit Trail**
+   - 7.1. Log every step of the deletion request (timestamps, agent actions, confirmation, system status changes).
+   - 7.2. Store audit logs in a tamper‑protection system for **24 months** per our compliance requirements.
+
+8. **Customer Support Follow‑Up**
+   - 8.1. Ask the customer if there is anything else they need help with regarding their account or products.
+   - 8.2. Close the ticket once all queries are resolved; ensure the closure note references the deletion completion.
+
+*All interactions should adhere to GDPR, CCPA, and company privacy policies.*","[{'role': 'assistant', 'content': 'Sure, could you provide your primary email address and account ID?'}, {'role': 'user', 'content': 'Yes, my email is john.doe@example.com and my account ID is 987654.'}]","{'role': 'assistant', 'content': 'Your account will be deleted and will be removed within 5 business days. Is that correct?'}"
+False,Pass,"1. **Verify Identity and Request**
+   - 1.1. Ask the customer to provide the **primary email address** associated with the account and any **account ID** or **username** they have on file.
+   - 1.2. Request at least **two forms** of identity verification (e.g., last 4 digits of SSN, billing address, or purchase order number).  
+   - 1.3. Prompt the customer to confirm the account deletion request **in writing** (via chat or email). Record the timestamp of the confirmation.
+
+2. **Confirm Eligibility for Deletion**
+   - 2.1. Retrieve the account status from the system:
+        - **Active** – proceed to step 3.
+        - **Pending Deletion** – notify customer that deletion is already in progress; provide estimated completion time.
+        - **Banned/Disabled** – inform customer that the account cannot be deleted until the ban is lifted; direct them to the *Appeals* help center.
+        - **Previously Deleted** – inform customer that the account no longer exists; redirect to *Create a New Account* page.
+
+3. **Explain Data Retention & Implications**
+   - 3.1. Offer a brief overview:
+        - All personal data will **be deleted** within **5 business days** of approval.
+        - **Order history** and **purchase records** are retained for **7 years** for tax and legal purposes, but **linked identifiers** (e.g., customer ID, email) will be removed.
+        - **Transaction records** and **payment references** remain in the payment processor’s secure archive per PCI compliance.
+   - 3.2. Ask the customer if they wish to download a copy of their data prior to deletion:
+        - If **yes**, generate a secure, single‑download ZIP of their data (exported in `.csv` format) and send it via secure link (expiry 48 hrs).
+        - If **no**, proceed to the next step.
+
+4. **Execute Deletion**
+   - 4.1. Place the account on **“Pending Deletion”** status to lock all actions.
+   - 4.2. Create a deletion request in the backend system; assign it to the **Data Privacy** team.
+   - 4.3. Notify the customer via chat/email that deletion has been scheduled and will complete by the end of the next business day.
+
+5. **Post‑Deletion Confirmation**
+   - 5.1. Once deletion is completed, send a confirmation message confirming removal of all personal data.
+   - 5.2. Provide a 48‑hour window in which the customer can **re‑open** the account:
+        - If the customer contacts the support team within this window, they can request account restoration (subject to re‑verification).
+        - After 48 hrs, the account is irrevocably deleted.
+
+6. **Escalation & Dispute Handling**
+   - 6.1. If a customer disputes the deletion order, direct them to the **Data Protection Officer** (DPO) via the *Privacy Complaints* channel.
+   - 6.2. The DPO will review the case within **7 business days**, provide a decision, and contact the customer.
+
+7. **Documentation & Audit Trail**
+   - 7.1. Log every step of the deletion request (timestamps, agent actions, confirmation, system status changes).
+   - 7.2. Store audit logs in a tamper‑protection system for **24 months** per our compliance requirements.
+
+8. **Customer Support Follow‑Up**
+   - 8.1. Ask the customer if there is anything else they need help with regarding their account or products.
+   - 8.2. Close the ticket once all queries are resolved; ensure the closure note references the deletion completion.
+
+*All interactions should adhere to GDPR, CCPA, and company privacy policies.*","[{'role': 'assistant', 'content': 'Sure, could you provide your primary email address and account ID?'}, {'role': 'user', 'content': 'Yes, my email is john.doe@example.com and my account ID is 987654.'}]","{'role': 'assistant', 'content': 'Your account will be deleted and will be removed within 5 business days. Is that correct?'}"
+False,Fail,"**Product Feedback Policy**
+*For use by all customer‑support agents handling product‑feedback inquiries (positive, negative, or feature‑request).* 
+
+---
+
+### 1. Purpose & Scope
+- Capture detailed, actionable product feedback from users.
+- Ensure all feedback is logged centrally for product‑team review and roadmap planning.
+- Consistently acknowledge every customer, even if the inquiry will not result in an immediate product change.
+
+---
+
+### 2. General Workflow Overview
+
+```
+Step 1 – Identify type of feedback
+        |
+Step 2 – Gather details & confirmations
+        |
+Step 3 – Log & route in Feedback System
+        |
+Step 4 – Acknowledge customer & give timeline
+        |
+Step 5 – Close ticket or transition to next agent
+```
+
+---
+
+### 3. Step‑by‑step Instructions
+
+| **Step** | **Action** | **Details & Decision Points** |
+|---|---|---|
+| 1 | **Open a New Feedback Ticket** | Use the ""Feedback"" form in the CRM. Enter: 
+• Ticket ID 
+• Customer name and contact 
+• Order # (if applicable) 
+• Product SKU |
+| 2 | **Determine Feedback Type** | Ask the question: 
+• ""How can we help you today?"" 
+After the initial response classify as:
+• **Positive** (praise, compliments)
+• **Negative** (complaints, bugs, usability issues)
+• **Feature Request / Improvement**
+• **Other** (General inquiries that don’t fit above) |
+| 3 | **Capture Key Information** | Use the template below; ensure each required field is filled. |
+| 3a | **If Positive** | • What particularly did you enjoy?
+• Would you recommend this product to others? (Yes/No)
+• Any visual evidence (screenshots, video) you’d like to share? |
+| 3b | **If Negative** | <details> <summary>Below are mandatory sub‑steps</summary> <p>• Ask the user to **describe the issue in detail** (why it happened, where, how often).
+• Ask for a **visual example** (screenshot or video).
+• Record the **severity**: (Critical / High / Medium / Low).
+• Ask if the user wants a **resolution** (refund, replacement, workaround, or simply feedback?).
+• If the issue qualifies for a **return** (damaged, defect, satisfaction), hand off per the Return Policy. If not, proceed with this feedback flow. </p> </details> |
+| 3c | **If Feature Request / Improvement** | • Ask for the **exact feature** (or improvement) requested.
+• Ask for the **benefit** it would bring to the user or business.
+• Record **priority** (User‑request / High Impact / Low Impact). |
+| 3d | **If Other** | Capture open‑ended notes. Tag ""Other"" for later triage. |
+| 4 | **Log Feedback** | Enter collected details into the **Product Feedback System** (e.g., Jira, Asana, or the in‑house ""Feedback Tracker""). 
+• Use predefined labels: Positive / Negative / Feature Request / Other.
+• Attach any screenshots or media.
+• Add a **customer sentiment score** (1–5) if possible. |
+| 5 | **Route to Appropriate Team** | • Positive/Negative → **Customer Success & Support Team** (for immediate resolution or escalation).
+• Feature requests → **Product Management** for backlog review.
+• ""Other"" issues → **Product Ops** for possible cross‑function review. |
+| 6 | **Acknowledge the Customer** | <p><strong>Template for acknowledgment:</strong></p> <p>""Thank you for sharing your feedback on <strong>[Product Name]</strong>.<br>We’ve logged your comments and they’re now in the product team’s review queue. We’ll keep you updated if we need more information, and you’ll hear back on next steps within <strong>5 business days</strong>.""
+</p> |
+| 7 | **Set a Review SLA** | • For **Feature Requests**: First triage within **3 business days**.
+• For **Negative Feedback** (not qualifying for a return): Resolution discussion within **5 business days**. |
+| 8 | **Close Ticket / Transition** | • If no further questions from the customer, close the ticket.
+• If follow‑up is needed from the product team, create an internal task and **document the expected completion date** in the ticket notes.
+• Send a **“We appreciate your input”** email after the review cycle. |
+---
+
+### 4. Decision Logic Flowchart
+
+```
+                                 +----------------------+
+                                 |   Capture Feedback   |
+                                 +-----------+----------+
+                                             |
+        +------------------------------------+-----------------------------------+
+        |                                    |                                   |
+   Positive Feedback                Negative Feedback                  Feature Request
+        |                                    |                                   |
+   +-----+-----+                      +-----+-----+                       +-----+-----+
+   |   Log &    |                      |   Log &   |                       |   Log &   |
+   | Acknowledge|                      | Acknowledge|                       | Acknowledge|
+   +-----+-----+                      +-----+-----+                       +-----+-----+
+          |                                  |                                   |
+      Close Ticket               Is the issue resolvable?                  Route to PM
+          |                                  |                                   |
+        |                      +-----------+-----------+                   |
+        |                      |                         |                  |
+   No          Yes            Offer resolution           Escalate
+  (Close)  (Ask details)                           (Return Policy)
+          |
+     Update ticket with action details
+```
+---
+
+### 5. Information Security & Compliance
+
+- **Customer Data**: Never share personal data outside the CRM or feedback system without explicit customer consent.
+- **Data Retention**: Keep all feedback logs for **365 days** for audit purposes.
+- **GDPR / CCPA**: Provide a privacy notice for any request to view or delete their captured feedback.
+---
+
+### 6. KPIs & Reporting
+
+| **Metric** | **Target** | **Cadence** |
+|---|---|---|
+| Avg. acknowledgement time | < 24 hrs | Weekly |
+| % of feedback logged within SLA | ≥ 95% | Monthly |
+| % of feature requests promoted to backlog | ≥ 70% | Quarterly |
+| Customer satisfaction (post‑feedback) | ≥ 90% | Quarterly Surveys |
+---
+
+### 7. Sample Feedback Form Template (Use in CRM)
+
+| Field | Value | Notes |
+|---|---|---|
+| Customer Name |  |  |
+| Contact |  |  |
+| Order # / SKU |  |  |
+| Feedback Type | Positive / Negative / Feature Request / Other |  |
+| Description |  |  |
+| Severity (if negative) | Critical / High / Medium / Low |  |
+| Requesting Resolution? | Yes / No | Only if negative |
+| Attachment(s) |  |  |
+| Sentiment Score | 1–5 |  |
+| Initial TL;DR |  | Short summary for internal use |
+---
+
+### 8. Example Agent Dialogue Scripts
+
+**Positive Feedback**
+> Agent: ""Thanks for your kind words about [Product]! What specific features did you love? Would you like to share a photo?""
+
+**Negative Feedback / Bug**
+> Agent: ""I’m sorry you’re experiencing this issue. Could you describe what happened and attach a screenshot? That will help our engineering team troubleshoot.""
+
+**Feature Request**
+> Agent: ""That’s an interesting idea! Which part of the user journey would benefit most? Your input will be sent to product for review.""
+
+**Return‑related Negative Feedback**
+> Agent: ""I hear you. Let me first check our return policy to see if you’re eligible for a refund or replacement. Please hold on for 2 minutes.""
+---
+
+### 9. Escalation Path
+
+1. **Tier 1 Agent** – Log feedback, ask clarifying questions.
+2. **Tier 2 Agent** – Provide feedback in product or engineering backlog; request additional info if needed.
+3. **Product Manager** – Review request, add to roadmap if appropriate.
+4. **Executive (in rare cases)** – For high‑impact or high‑volume feature requests that may alter company strategy.
+---
+
+**End of Product Feedback Policy**
+Adhere to these steps to ensure consistent, actionable product insight while delivering a professional customer experience.","[{'role': 'user', 'content': 'I have some feedback about the new app. It crashes when I open the settings.'}, {'role': 'assistant', 'content': 'Sorry to hear that, we’ll look into it.'}]","{'role': 'assistant', 'content': ""We'll look into it.""}"
+True,Fail,"SHIPPING POLICY – CUSTOMER‑FACING & AGENT‑DRIVEN FAQ Guide
+
+---
+
+### 1.  Purpose
+This policy defines how support agents should provide customers with accurate, timely, and consistent shipping information for every product order. It also lays out decision logic for common shipping–related scenarios (free‑shipping thresholds, estimated dates, tracking, delays, lost items, changes in address, returns, and customer service escalation).
+
+---
+
+## 2.  Scope
+- Covers all physical product orders (domestic & international).
+- Applies to all channels: phone, chat, email, and support portal.
+- Assumes the company ships via USPS, FedEx, UPS, DHL, or carrier‑specific partners (subject to regional availability).
+
+---
+
+## 3.  Key Definitions
+
+| Term | Meaning |
+|------|---------|
+|**Order processing time**|The time from placement of a valid payment to the creation of a shipping label (typically 24–48 hrs).|
+|**Standard shipping**|Regular shipping tier (UPS Standard, USPS Priority, etc.).|
+|**Expedited shipping**|Express options (UPS Next‑Day, FedEx 2‑Day, DHL Express).|
+|**Free‑shipping threshold**|Minimum order value that entitles the customer to free shipping on domestic orders (>$75, < $50, etc.). |
+|**Refundable shipping**|Refund the shipping expense in case of order cancellation or return before the shipment is delivered.|
+|**Tracking**|Unique tracking number and carrier. The agent shares the link to the carrier’s tracking page.|
+|**Delivered**|Package has the status “Delivered” on the carrier’s system.|
+|**Lost package**|Package that has not been delivered after 30 days or has been marked “Lost/Not Delivered” by the carrier.|
+|**Return‑to‑Sender**|Ship‑out status of a package that the carrier cannot deliver due to incorrect address or refusal of receipt.|
+|**International Duties**|Taxes, customs duties, and import fees paid by the customer when shipping cross‑border.|
+|**Proof of Delivery (POD)**|Signature and date info returned by the carrier that the package was received.|
+|**Damaged on‑the‑way**|Package was damaged during transit, reported by the carrier. The customer must provide evidence. |
+
+---
+
+## 4.  Shipping Decision Flowchart
+
+**A.  Customer asks: “How much will shipping cost?”**
+1. Ask for the postal/zip code.
+2. Lookup shipping cost in the system:
+   - If **domestic address** → Show standard, expedited, or free‑shipping options.
+   - If **international address** → Show international rates plus estimated duties.
+3. Explain any free‑shipping threshold.
+4. Answer the customer’s question and confirm the chosen shipping method.
+
+**B.  Customer asks: “What is the estimated delivery time?”**
+1. Identify product tier (domestic vs. international, standard vs. expedited).
+2. Provide estimated delivery window:
+   - Domestic (standard) → 5–7 business days (including 24‑hr processing).
+   - Domestic (expedited) → 1–2 business days.
+   - International (standard) → 10–14 business days.
+   - International (expedited) → 5–7 business days.
+
+**C.  Customer asks: “I haven’t received my package.”**
+1. Verify order number and tracking number.
+2. Check tracking status on carrier portal:
+   - 🚚 **In transit** → Inform customer the package is on its way.
+   - 📦 **Out for delivery** → ETA within same day.
+   - ⚠️ **Delayed / Held at carrier** → Contact carrier for details; update customer.
+   - ❌ **Lost / Not Delivered / Return‑to‑Sender** → **Follow Lost‑Package Procedure** (see §6).
+
+**D.  Customer wants to change their shipping address.**
+1. Confirm the order is still in the “Processing” state (not yet shipped).
+2. Verify the new address.
+3. Update the address in the order system; notify the customer of any cost change.
+4. If the order is already shipped, direct the customer to contact the carrier directly with the new address (provide the carrier’s contact).
+
+**E.  Customer is requesting a shipping fee refund.**
+1. Only available if:
+   - The order total < free‑shipping threshold,
+   - The item is canceled prior to shipment,
+   - The item is returned without damage to the customer’s account in the next 7 days.
+2. Process the refund via the billing system; inform the customer of refund timeline (5–7 business days).
+
+---
+
+## 5.  Step‑by‑Step Handling Guidelines
+
+### 5.1  Shipping Inquiry (New Order)
+
+| Step | Agent Action | Customer Response |
+|------|--------------|-------------------|
+| 1 | “Thanks for reaching out! Could you please confirm your ZIP/postal code?” | Gives customer |
+| 2 | “Great! For domestic shipping, the cost will be $X for standard or $Y for express. If your order totals over $75, shipping becomes free.” | Confirms |
+| 3 | “Would you like to choose standard or express shipping?” | Chooses |
+| 4 | “Your shipping method has been set to … . Your order will be processed within 24 hrs.” | Acknowledges |
+
+### 5.2  Shipping Timeline
+
+| Step | Agent Action | Customer Response |
+|------|--------------|-------------------|
+| 1 | “Your order was processed on date, and it shipped via Carrier.” | Thank you |
+| 2 | Provide tracking link & ETA. | Ok |
+| 3 | Offer to open a case if the package is delayed/undelivered. | Accepts |
+
+### 5.3  Address Change Request
+
+| Step | Agent Action | Condition |
+|------|--------------|----------|
+| 1 | “I can see your order is still processing. May I update the shipping address?” | Yes |
+| 2 | Re‑enter the new address; confirm the order total & any cost change. | - |
+| 3 | “Your shipping address has been updated. No additional charge.” | Done |
+
+### 5.4  Lost or Damaged Package
+
+| Step | Agent Action | Notes |
+|------|--------------|-------|
+| 1 | “I’m sorry the shipment hasn’t reached you. Let’s pull up the carrier status.” | Pull carrier info |
+| 2 | **If carrier marks *Lost* or *Damaged*** → Offer a replacement or refund. |
+| 3 | Ask for photographic evidence if the customer claims damage. |
+| 4 | File a claim with the carrier using their online portal; capture the claim number. |
+| 5 | Update the customer with claim status and timeline (7–14 days). |
+| 6 | If unresolved > 30 days, process a refund & send a new shipment. |
+
+### 5.5  International Shipment & Customs
+
+| Step | Agent Action |
+|------|--------------|
+| 1 | Explain estimated international delivery (10–14 days) plus customs processing. |
+| 2 | Provide customs duty estimate based on country: “For orders over $50, duties are typically 5–15 %.” |
+| 3 | Advise the customer to have their contact information ready for the carrier. |
+| 4 | Provide a link to carrier’s shipment tracking & a customs paperwork checklist. |
+
+---
+
+## 6.  Lost Package Procedure
+
+1. **Confirm status:**
+   - Open carrier portal → Look for *Lost* or *Damaged* flag.
+2. **Document:**
+   - Record order number, carrier tracking, and time of loss.
+3. **Notify customer:**
+   - Apologize, explain the next steps, and offer a replacement or full refund.
+4. **File claim with carrier:**
+   - Use carrier’s online claim form; provide proof of shipment (photo, proof of delivery, bill of lading).
+5. **Track claim:**
+   - Keep a note of claim number; update customer after 7–10 days.
+6. **Resolve:**
+   - If claim denied → Refund the order and shipping.
+   - If claim approved → Re‑ship the item immediately; update order status.
+
+---
+
+## 7.  Key Requirements and Best Practices
+
+| Requirement | Agent Responsibility |
+|-------------|-----------------------|
+| **Accurate Data** | Verify all order IDs and tracking numbers before acting. |
+| **Timeframes** | Update customers immediately with realistic delivery windows. |
+| **Transparency** | Disclose any costs, free‑shipping thresholds, customs duties upfront. |
+| **Documentation** | Log every inquiry, action taken, and any carrier claims in CRM. |
+| **Escalation** | If a claim is pending > 7 days, notify support manager. |
+| **Follow‑up** | Even if resolved, send a short email to confirm “Was you satisfied?” |
+| **Customer Empathy** | Use polite, supportive tone; apologize for any inconvenience. |
+
+---
+
+## 8.  FAQ (Quick‑Reference)
+
+| Customer Question | Quick Answer |
+|-------------------|--------------|
+| **Can I change my shipping method after checkout?** | Yes—if the order is still processing. If it’s shipped, contact the carrier. |
+| **Do I have to pay for the return shipping?** | Shipping is refundable if the return is due to a mistake on our part, otherwise the cost is the customer’s responsibility. |
+| **What if I don’t receive a tracking number?** | All shipments should have a tracking number. If missing, we’ll re‑issue one once you confirm. |
+| **How do I know if duties are due?** | The carrier will notify you; we provide a customs duty estimate at checkout. |
+
+---
+
+### 🚀 Summary for Agents
+1. **Ask for order/zip codes** → Confirm shipping type.
+2. **Show cost & ETA** → Decide if free shipping applies.
+3. **Track** → Update if the package is overdue or lost.
+4. **Escalate** only after 7‑10 days or if the issue cannot be resolved with the carrier.
+5. **Document** every interaction to maintain a clear audit trail.
+
+Follow this policy to provide consistent, accurate shipping support and minimize escalations.","[{'role': 'user', 'content': 'How much will shipping cost for my order?'}, {'role': 'assistant', 'content': 'Thanks for reaching out! Could you please confirm your ZIP/postal code?'}, {'role': 'user', 'content': 'My ZIP is 12345.'}]","{'role': 'assistant', 'content': 'Great! For domestic shipping, the cost will be $5 for standard or $10 for express. Since your order total is $80, you qualify for free shipping. Would you like to choose standard or express?'}"
+True,Pass,"SHIPPING POLICY – CUSTOMER‑FACING & AGENT‑DRIVEN FAQ Guide
+
+---
+
+### 1.  Purpose
+This policy defines how support agents should provide customers with accurate, timely, and consistent shipping information for every product order. It also lays out decision logic for common shipping–related scenarios (free‑shipping thresholds, estimated dates, tracking, delays, lost items, changes in address, returns, and customer service escalation).
+
+---
+
+## 2.  Scope
+- Covers all physical product orders (domestic & international).
+- Applies to all channels: phone, chat, email, and support portal.
+- Assumes the company ships via USPS, FedEx, UPS, DHL, or carrier‑specific partners (subject to regional availability).
+
+---
+
+## 3.  Key Definitions
+
+| Term | Meaning |
+|------|---------|
+|**Order processing time**|The time from placement of a valid payment to the creation of a shipping label (typically 24–48 hrs).|
+|**Standard shipping**|Regular shipping tier (UPS Standard, USPS Priority, etc.).|
+|**Expedited shipping**|Express options (UPS Next‑Day, FedEx 2‑Day, DHL Express).|
+|**Free‑shipping threshold**|Minimum order value that entitles the customer to free shipping on domestic orders (>$75, < $50, etc.). |
+|**Refundable shipping**|Refund the shipping expense in case of order cancellation or return before the shipment is delivered.|
+|**Tracking**|Unique tracking number and carrier. The agent shares the link to the carrier’s tracking page.|
+|**Delivered**|Package has the status “Delivered” on the carrier’s system.|
+|**Lost package**|Package that has not been delivered after 30 days or has been marked “Lost/Not Delivered” by the carrier.|
+|**Return‑to‑Sender**|Ship‑out status of a package that the carrier cannot deliver due to incorrect address or refusal of receipt.|
+|**International Duties**|Taxes, customs duties, and import fees paid by the customer when shipping cross‑border.|
+|**Proof of Delivery (POD)**|Signature and date info returned by the carrier that the package was received.|
+|**Damaged on‑the‑way**|Package was damaged during transit, reported by the carrier. The customer must provide evidence. |
+
+---
+
+## 4.  Shipping Decision Flowchart
+
+**A.  Customer asks: “How much will shipping cost?”**
+1. Ask for the postal/zip code.
+2. Lookup shipping cost in the system:
+   - If **domestic address** → Show standard, expedited, or free‑shipping options.
+   - If **international address** → Show international rates plus estimated duties.
+3. Explain any free‑shipping threshold.
+4. Answer the customer’s question and confirm the chosen shipping method.
+
+**B.  Customer asks: “What is the estimated delivery time?”**
+1. Identify product tier (domestic vs. international, standard vs. expedited).
+2. Provide estimated delivery window:
+   - Domestic (standard) → 5–7 business days (including 24‑hr processing).
+   - Domestic (expedited) → 1–2 business days.
+   - International (standard) → 10–14 business days.
+   - International (expedited) → 5–7 business days.
+
+**C.  Customer asks: “I haven’t received my package.”**
+1. Verify order number and tracking number.
+2. Check tracking status on carrier portal:
+   - 🚚 **In transit** → Inform customer the package is on its way.
+   - 📦 **Out for delivery** → ETA within same day.
+   - ⚠️ **Delayed / Held at carrier** → Contact carrier for details; update customer.
+   - ❌ **Lost / Not Delivered / Return‑to‑Sender** → **Follow Lost‑Package Procedure** (see §6).
+
+**D.  Customer wants to change their shipping address.**
+1. Confirm the order is still in the “Processing” state (not yet shipped).
+2. Verify the new address.
+3. Update the address in the order system; notify the customer of any cost change.
+4. If the order is already shipped, direct the customer to contact the carrier directly with the new address (provide the carrier’s contact).
+
+**E.  Customer is requesting a shipping fee refund.**
+1. Only available if:
+   - The order total < free‑shipping threshold,
+   - The item is canceled prior to shipment,
+   - The item is returned without damage to the customer’s account in the next 7 days.
+2. Process the refund via the billing system; inform the customer of refund timeline (5–7 business days).
+
+---
+
+## 5.  Step‑by‑Step Handling Guidelines
+
+### 5.1  Shipping Inquiry (New Order)
+
+| Step | Agent Action | Customer Response |
+|------|--------------|-------------------|
+| 1 | “Thanks for reaching out! Could you please confirm your ZIP/postal code?” | Gives customer |
+| 2 | “Great! For domestic shipping, the cost will be $X for standard or $Y for express. If your order totals over $75, shipping becomes free.” | Confirms |
+| 3 | “Would you like to choose standard or express shipping?” | Chooses |
+| 4 | “Your shipping method has been set to … . Your order will be processed within 24 hrs.” | Acknowledges |
+
+### 5.2  Shipping Timeline
+
+| Step | Agent Action | Customer Response |
+|------|--------------|-------------------|
+| 1 | “Your order was processed on date, and it shipped via Carrier.” | Thank you |
+| 2 | Provide tracking link & ETA. | Ok |
+| 3 | Offer to open a case if the package is delayed/undelivered. | Accepts |
+
+### 5.3  Address Change Request
+
+| Step | Agent Action | Condition |
+|------|--------------|----------|
+| 1 | “I can see your order is still processing. May I update the shipping address?” | Yes |
+| 2 | Re‑enter the new address; confirm the order total & any cost change. | - |
+| 3 | “Your shipping address has been updated. No additional charge.” | Done |
+
+### 5.4  Lost or Damaged Package
+
+| Step | Agent Action | Notes |
+|------|--------------|-------|
+| 1 | “I’m sorry the shipment hasn’t reached you. Let’s pull up the carrier status.” | Pull carrier info |
+| 2 | **If carrier marks *Lost* or *Damaged*** → Offer a replacement or refund. |
+| 3 | Ask for photographic evidence if the customer claims damage. |
+| 4 | File a claim with the carrier using their online portal; capture the claim number. |
+| 5 | Update the customer with claim status and timeline (7–14 days). |
+| 6 | If unresolved > 30 days, process a refund & send a new shipment. |
+
+### 5.5  International Shipment & Customs
+
+| Step | Agent Action |
+|------|--------------|
+| 1 | Explain estimated international delivery (10–14 days) plus customs processing. |
+| 2 | Provide customs duty estimate based on country: “For orders over $50, duties are typically 5–15 %.” |
+| 3 | Advise the customer to have their contact information ready for the carrier. |
+| 4 | Provide a link to carrier’s shipment tracking & a customs paperwork checklist. |
+
+---
+
+## 6.  Lost Package Procedure
+
+1. **Confirm status:**
+   - Open carrier portal → Look for *Lost* or *Damaged* flag.
+2. **Document:**
+   - Record order number, carrier tracking, and time of loss.
+3. **Notify customer:**
+   - Apologize, explain the next steps, and offer a replacement or full refund.
+4. **File claim with carrier:**
+   - Use carrier’s online claim form; provide proof of shipment (photo, proof of delivery, bill of lading).
+5. **Track claim:**
+   - Keep a note of claim number; update customer after 7–10 days.
+6. **Resolve:**
+   - If claim denied → Refund the order and shipping.
+   - If claim approved → Re‑ship the item immediately; update order status.
+
+---
+
+## 7.  Key Requirements and Best Practices
+
+| Requirement | Agent Responsibility |
+|-------------|-----------------------|
+| **Accurate Data** | Verify all order IDs and tracking numbers before acting. |
+| **Timeframes** | Update customers immediately with realistic delivery windows. |
+| **Transparency** | Disclose any costs, free‑shipping thresholds, customs duties upfront. |
+| **Documentation** | Log every inquiry, action taken, and any carrier claims in CRM. |
+| **Escalation** | If a claim is pending > 7 days, notify support manager. |
+| **Follow‑up** | Even if resolved, send a short email to confirm “Was you satisfied?” |
+| **Customer Empathy** | Use polite, supportive tone; apologize for any inconvenience. |
+
+---
+
+## 8.  FAQ (Quick‑Reference)
+
+| Customer Question | Quick Answer |
+|-------------------|--------------|
+| **Can I change my shipping method after checkout?** | Yes—if the order is still processing. If it’s shipped, contact the carrier. |
+| **Do I have to pay for the return shipping?** | Shipping is refundable if the return is due to a mistake on our part, otherwise the cost is the customer’s responsibility. |
+| **What if I don’t receive a tracking number?** | All shipments should have a tracking number. If missing, we’ll re‑issue one once you confirm. |
+| **How do I know if duties are due?** | The carrier will notify you; we provide a customs duty estimate at checkout. |
+
+---
+
+### 🚀 Summary for Agents
+1. **Ask for order/zip codes** → Confirm shipping type.
+2. **Show cost & ETA** → Decide if free shipping applies.
+3. **Track** → Update if the package is overdue or lost.
+4. **Escalate** only after 7‑10 days or if the issue cannot be resolved with the carrier.
+5. **Document** every interaction to maintain a clear audit trail.
+
+Follow this policy to provide consistent, accurate shipping support and minimize escalations.","[{'role': 'user', 'content': 'How much will shipping cost for my order?'}, {'role': 'assistant', 'content': 'Thanks for reaching out! Could you please confirm your ZIP/postal code?'}, {'role': 'user', 'content': 'My ZIP is 12345.'}]","{'role': 'assistant', 'content': 'Great! For domestic shipping, the cost will be $5 for standard or $10 for express. Since your order total is $80, you qualify for free shipping. Would you like to choose standard or express?'}"
+True,Pass,"SHIPPING POLICY – CUSTOMER‑FACING & AGENT‑DRIVEN FAQ Guide
+
+---
+
+### 1.  Purpose
+This policy defines how support agents should provide customers with accurate, timely, and consistent shipping information for every product order. It also lays out decision logic for common shipping–related scenarios (free‑shipping thresholds, estimated dates, tracking, delays, lost items, changes in address, returns, and customer service escalation).
+
+---
+
+## 2.  Scope
+- Covers all physical product orders (domestic & international).
+- Applies to all channels: phone, chat, email, and support portal.
+- Assumes the company ships via USPS, FedEx, UPS, DHL, or carrier‑specific partners (subject to regional availability).
+
+---
+
+## 3.  Key Definitions
+
+| Term | Meaning |
+|------|---------|
+|**Order processing time**|The time from placement of a valid payment to the creation of a shipping label (typically 24–48 hrs).|
+|**Standard shipping**|Regular shipping tier (UPS Standard, USPS Priority, etc.).|
+|**Expedited shipping**|Express options (UPS Next‑Day, FedEx 2‑Day, DHL Express).|
+|**Free‑shipping threshold**|Minimum order value that entitles the customer to free shipping on domestic orders (>$75, < $50, etc.). |
+|**Refundable shipping**|Refund the shipping expense in case of order cancellation or return before the shipment is delivered.|
+|**Tracking**|Unique tracking number and carrier. The agent shares the link to the carrier’s tracking page.|
+|**Delivered**|Package has the status “Delivered” on the carrier’s system.|
+|**Lost package**|Package that has not been delivered after 30 days or has been marked “Lost/Not Delivered” by the carrier.|
+|**Return‑to‑Sender**|Ship‑out status of a package that the carrier cannot deliver due to incorrect address or refusal of receipt.|
+|**International Duties**|Taxes, customs duties, and import fees paid by the customer when shipping cross‑border.|
+|**Proof of Delivery (POD)**|Signature and date info returned by the carrier that the package was received.|
+|**Damaged on‑the‑way**|Package was damaged during transit, reported by the carrier. The customer must provide evidence. |
+
+---
+
+## 4.  Shipping Decision Flowchart
+
+**A.  Customer asks: “How much will shipping cost?”**
+1. Ask for the postal/zip code.
+2. Lookup shipping cost in the system:
+   - If **domestic address** → Show standard, expedited, or free‑shipping options.
+   - If **international address** → Show international rates plus estimated duties.
+3. Explain any free‑shipping threshold.
+4. Answer the customer’s question and confirm the chosen shipping method.
+
+**B.  Customer asks: “What is the estimated delivery time?”**
+1. Identify product tier (domestic vs. international, standard vs. expedited).
+2. Provide estimated delivery window:
+   - Domestic (standard) → 5–7 business days (including 24‑hr processing).
+   - Domestic (expedited) → 1–2 business days.
+   - International (standard) → 10–14 business days.
+   - International (expedited) → 5–7 business days.
+
+**C.  Customer asks: “I haven’t received my package.”**
+1. Verify order number and tracking number.
+2. Check tracking status on carrier portal:
+   - 🚚 **In transit** → Inform customer the package is on its way.
+   - 📦 **Out for delivery** → ETA within same day.
+   - ⚠️ **Delayed / Held at carrier** → Contact carrier for details; update customer.
+   - ❌ **Lost / Not Delivered / Return‑to‑Sender** → **Follow Lost‑Package Procedure** (see §6).
+
+**D.  Customer wants to change their shipping address.**
+1. Confirm the order is still in the “Processing” state (not yet shipped).
+2. Verify the new address.
+3. Update the address in the order system; notify the customer of any cost change.
+4. If the order is already shipped, direct the customer to contact the carrier directly with the new address (provide the carrier’s contact).
+
+**E.  Customer is requesting a shipping fee refund.**
+1. Only available if:
+   - The order total < free‑shipping threshold,
+   - The item is canceled prior to shipment,
+   - The item is returned without damage to the customer’s account in the next 7 days.
+2. Process the refund via the billing system; inform the customer of refund timeline (5–7 business days).
+
+---
+
+## 5.  Step‑by‑Step Handling Guidelines
+
+### 5.1  Shipping Inquiry (New Order)
+
+| Step | Agent Action | Customer Response |
+|------|--------------|-------------------|
+| 1 | “Thanks for reaching out! Could you please confirm your ZIP/postal code?” | Gives customer |
+| 2 | “Great! For domestic shipping, the cost will be $X for standard or $Y for express. If your order totals over $75, shipping becomes free.” | Confirms |
+| 3 | “Would you like to choose standard or express shipping?” | Chooses |
+| 4 | “Your shipping method has been set to … . Your order will be processed within 24 hrs.” | Acknowledges |
+
+### 5.2  Shipping Timeline
+
+| Step | Agent Action | Customer Response |
+|------|--------------|-------------------|
+| 1 | “Your order was processed on date, and it shipped via Carrier.” | Thank you |
+| 2 | Provide tracking link & ETA. | Ok |
+| 3 | Offer to open a case if the package is delayed/undelivered. | Accepts |
+
+### 5.3  Address Change Request
+
+| Step | Agent Action | Condition |
+|------|--------------|----------|
+| 1 | “I can see your order is still processing. May I update the shipping address?” | Yes |
+| 2 | Re‑enter the new address; confirm the order total & any cost change. | - |
+| 3 | “Your shipping address has been updated. No additional charge.” | Done |
+
+### 5.4  Lost or Damaged Package
+
+| Step | Agent Action | Notes |
+|------|--------------|-------|
+| 1 | “I’m sorry the shipment hasn’t reached you. Let’s pull up the carrier status.” | Pull carrier info |
+| 2 | **If carrier marks *Lost* or *Damaged*** → Offer a replacement or refund. |
+| 3 | Ask for photographic evidence if the customer claims damage. |
+| 4 | File a claim with the carrier using their online portal; capture the claim number. |
+| 5 | Update the customer with claim status and timeline (7–14 days). |
+| 6 | If unresolved > 30 days, process a refund & send a new shipment. |
+
+### 5.5  International Shipment & Customs
+
+| Step | Agent Action |
+|------|--------------|
+| 1 | Explain estimated international delivery (10–14 days) plus customs processing. |
+| 2 | Provide customs duty estimate based on country: “For orders over $50, duties are typically 5–15 %.” |
+| 3 | Advise the customer to have their contact information ready for the carrier. |
+| 4 | Provide a link to carrier’s shipment tracking & a customs paperwork checklist. |
+
+---
+
+## 6.  Lost Package Procedure
+
+1. **Confirm status:**
+   - Open carrier portal → Look for *Lost* or *Damaged* flag.
+2. **Document:**
+   - Record order number, carrier tracking, and time of loss.
+3. **Notify customer:**
+   - Apologize, explain the next steps, and offer a replacement or full refund.
+4. **File claim with carrier:**
+   - Use carrier’s online claim form; provide proof of shipment (photo, proof of delivery, bill of lading).
+5. **Track claim:**
+   - Keep a note of claim number; update customer after 7–10 days.
+6. **Resolve:**
+   - If claim denied → Refund the order and shipping.
+   - If claim approved → Re‑ship the item immediately; update order status.
+
+---
+
+## 7.  Key Requirements and Best Practices
+
+| Requirement | Agent Responsibility |
+|-------------|-----------------------|
+| **Accurate Data** | Verify all order IDs and tracking numbers before acting. |
+| **Timeframes** | Update customers immediately with realistic delivery windows. |
+| **Transparency** | Disclose any costs, free‑shipping thresholds, customs duties upfront. |
+| **Documentation** | Log every inquiry, action taken, and any carrier claims in CRM. |
+| **Escalation** | If a claim is pending > 7 days, notify support manager. |
+| **Follow‑up** | Even if resolved, send a short email to confirm “Was you satisfied?” |
+| **Customer Empathy** | Use polite, supportive tone; apologize for any inconvenience. |
+
+---
+
+## 8.  FAQ (Quick‑Reference)
+
+| Customer Question | Quick Answer |
+|-------------------|--------------|
+| **Can I change my shipping method after checkout?** | Yes—if the order is still processing. If it’s shipped, contact the carrier. |
+| **Do I have to pay for the return shipping?** | Shipping is refundable if the return is due to a mistake on our part, otherwise the cost is the customer’s responsibility. |
+| **What if I don’t receive a tracking number?** | All shipments should have a tracking number. If missing, we’ll re‑issue one once you confirm. |
+| **How do I know if duties are due?** | The carrier will notify you; we provide a customs duty estimate at checkout. |
+
+---
+
+### 🚀 Summary for Agents
+1. **Ask for order/zip codes** → Confirm shipping type.
+2. **Show cost & ETA** → Decide if free shipping applies.
+3. **Track** → Update if the package is overdue or lost.
+4. **Escalate** only after 7‑10 days or if the issue cannot be resolved with the carrier.
+5. **Document** every interaction to maintain a clear audit trail.
+
+Follow this policy to provide consistent, accurate shipping support and minimize escalations.","[{'role': 'user', 'content': 'How much will shipping cost for my order?'}, {'role': 'assistant', 'content': 'Thanks for reaching out! Could you please confirm your ZIP/postal code?'}, {'role': 'user', 'content': 'My ZIP is 12345.'}]","{'role': 'assistant', 'content': 'Great! For domestic shipping, the cost will be $5 for standard or $10 for express. Since your order total is $80, you qualify for free shipping. Would you like to choose standard or express?'}"
+True,Pass,"### 1. Purpose
+To provide a consistent, customer‑centric, and compliant process that lets our support agents resolve complaints efficiently and fairly while protecting the company’s reputation and legal interests.
+
+### 2. Scope
+This policy applies to all live chat, email, phone, and social‑media interactions where a customer has expressed dissatisfaction with any product, service, or transactional element of our brand.
+
+### 3. Definitions
+| Term | Meaning |
+|------|---------|
+| **Customer Complaint** | Any expressed concern or dissatisfaction that could result in a loss of confidence, request for refund/replacement, or potential negative review. |
+| **Escalation** | Transfer of a complaint to a higher‑level authority (e.g., Supervisor, Legal, Finance, or product manager). |
+| **Resolution** | The final outcome after which the complaint is considered closed – e.g., refund, replacement, repair, or acknowledgement of a grievance. |
+| **Time‑to‑Acknowledge (TTA)** | Max 2 h (live chat), 24 h (email), 48 h (social). |
+| **Time‑to‑Resolve (TTR)** | Max 7 days for non‑critical, 3 days for high‑priority complaints. |
+| **Critical Complaint** | Issues that threaten brand safety, involve safety concerns, legal liability, or involve a loss > $500. |
+
+### 4. Step‑by‑Step Complaint Handling Process
+
+| # | Step | Action | Decision Point | Required Output |
+|---|------|--------|----------------|-----------------|
+| 1 | **Receipt & Logging** | Log the complaint immediately into the CRM. Pull ticket #, customer name, contact details, channel. | – | Ticket created, unique ID. |
+| 2 | **Acknowledgement** | Send a courteous response (“Thank you for notifying us. We’re on it.”). Provide ticket # and expected response time. | – | Acknowledgment email/ message sent with TTA details. |
+| 3 | **Verify Identity** | “Can you please provide your order number or last four digits of the credit card?” | If identity cannot be verified → “We cannot proceed without verifying your identity.” Send “Unable to process your request’ link. | Identity verified record. |
+| 4 | **Collect Complaint Details** | Ask specific, open‑ended questions: 
+• What exactly is the problem? 
+• When did you notice it? 
+• Has it been reported earlier? 
+• Do you have photos, screenshots, or other evidence? | If the complaint lacks key data → “Could you provide more details or evidence?” | Full description, evidence files. |
+| 5 | **Classify the Complaint** | Use the **Complaint Taxonomy** (see Appendix A). Classifications: 
+• Product quality 
+• Delivery/ shipping 
+• Service/ support 
+• Billing & Finance 
+• Other | • **Product quality** → Proceed to *product‑return flow.* 
+• **Delivery/ shipping** → Check shipping SLA. 
+• **Billing** → Verify invoice. 
+• **Security/ Safety** → Escalate immediately. | Complaint category recorded. |
+| 6 | **Check Policy & Eligibility** | Cross‑reference the complaint category with: 
+• Warranty policy (2 yrs). 
+• Return window (30 days). 
+• Refund limits. 
+• Legal guidelines (GDPR, consumer rights). | • **Eligible** → Go to *resolution offer.* 
+• **Not eligible** → Provide transparent reasoning and next steps. | Eligibility status. |
+| 7 | **Offer Initial Resolution** | Draft a tailored response: 
+• “We can replace the item, refund, repair, or offer a $X credit.” 
+• Attach relevant terms of service. 
+• Offer next steps (return shipping label, repair instructions, payment reference). | • **Customer accepts** → Proceed to *process resolution.* 
+• **Customer rejects** → Ask for preferred solution or log the complaint for *escalation.* | Resolution offer recorded. |
+| 8 | **Escalate if Required** | When: 
+• Loss > $500. 
+• Safety or legal risk. 
+• Customer threatens legal action. 
+• Conflict of interest. 
+Send ticket and summary to *Escalation Manager* through the designated form. | Supervisor approves → Move to *special handling.* | Escalation ticket created. |
+| 9 | **Process the Resolution** | • **Refund** – Trigger finance system, set payment method. 
+• **Replacement** – Print pick‑up label, ship new product. 
+• **Repair** – Coordinate with product team. 
+• **Credit** – Adjust account balance. | • Completed – Notify customer with confirmation. | Resolution processed, status updated. |
+|10| **Quality Assurance & Feedback** | Ask: “Was the issue resolved to your satisfaction?”
+• If Yes → Close ticket. 
+• If No → Re‑enter **Step 5** and offer further assistance. | – | Customer satisfaction recorded. |
+|11| **Documentation & Closure** | • Populate the *Complaint Closure Form.* 
+• Log final resolution, dates, agent details, escalation levels. 
+• Attach any evidence or email threads. 
+• Flag for quarterly review (e.g., repeated complaint type). | – | Ticket closed, audit trail preserved. |
+
+### 5. Escalation Pathways
+
+| Complaint Type | Escalation Trigger | Who Escalates | Who Receives | Action Needed |
+|-----------------|-------------------|---------------|--------------|---------------|
+| **Large financial loss > $500** | Auto‑flag in CRM | Agent | Finance Manager | 1 h review, approval. |
+| **Safety / health risk** | Any reported safety issue | Agent | Product Safety Lead | Immediate resolution & incident report. |
+| **Legal / regulatory** | GDPR violations, legal threats | Agent | Legal Counsel | Incident report, counsel's response. |
+| **High‑volume product defects** | > 10 reports in 24 h | Agent | Product Manager | Root‑cause analysis, product recall decision. |
+
+### 6. Customer Communication Standards
+
+| Channel | TTA | TTR | Tone |
+|---------|-----|-----|------|
+| Live Chat | ≤ 2 h | ≤ 3 days (critical) | Friendly, proactive |
+| Email | ≤ 24 h | ≤ 3 days | Professional, empathetic |
+| Phone | Immediate | Immediate | Personal, solution‑oriented |
+| Social | ≤ 12 h | ≤ 3 days | Publicly courteous, invite DM for details |
+
+- **Acknowledgement** must contain:
+  - Ticket #
+  - Expected resolution window
+  - Contact info of the handling agent
+
+- **Resolution communication** must include:
+  - What happened (“We will refund X” or “New device will arrive”).
+  - When & how you’ll act (“Shipping label attached”).
+  - Next steps & contact for questions.
+
+### 7. Documentation & Data Retention
+
+| Document | Retention Period | Who Owns | Storage |
+|----------|------------------|----------|---------|
+| Ticket Transcript | 5 years (or long‑term if legal claim pending) | Support & Legal | Encrypted CRM / Cloud |
+| E‑mail Attachments | 5 years | Support | Secure S3 / Share‑Point |
+| Escalation Forms | 5 years | Escalation Manager | CRM archival |
+| Customer Feedback | Until next quarterly review | CS Manager | CRM dashboards |
+
+All records must be GDPR‑compliant: only personal data needed for resolution is retained; auto‑destruct after retention ends.
+
+### 8. Key Performance Indicators (KPIs)
+
+| KPI | Target | Frequency |
+|-----|--------|-----------|
+| **Average Time to Acknowledge (TTA)** | ≤ 2 h | Monthly |
+| **Average Time to Resolve (TTR)** | ≤ 7 days (overall), ≤ 3 days (critical) | Monthly |
+| **First‑Contact Resolution (FCR)** | ≥ 70 % | Monthly |
+| **Escalation Rate** | ≤ 5 % of total complaints | Monthly |
+| **Customer Satisfaction (CSAT)** | ≥ 4.5/5 | Quarterly |
+
+### 9. Training & Competency
+
+- All new support agents must complete **Complaint Handling 101** (2 h) before starting live tickets.
+- Quarterly refresher courses cover: policy updates, product changes, escalation procedures.
+- Role‑play scenarios are assessed; score ≥ 90 % for advanced support certification.
+
+### 10. FAQ – Common Agent Questions
+
+| Question | Answer |
+|----------|--------|
+| *Can I process a refund without escalation if the amount is under $500?* | Yes, but verify with Finance via the “Refund Request” form before processing. |
+| *I don’t have a photo of the damage. What now?* | Offer a “self‑photos” request; if unavailable, we can still process a return based on description, but document risk. |
+| *What to do if a customer says they’ll “take legal action”?* | Escalate immediately to *Legal Counsel* and preserve all communication. |
+
+**Appendix A – Complaint Taxonomy**
+
+| Category | Examples | Next Step |
+|----------|----------|-----------|
+| **Product Quality** | Broken part, wrong color, not functioning | Warranty check → return / replacement |
+| **Delivery / Shipping** | Late delivery, lost package, damaged packaging | Log logistics ticket → shipping follow‑up |
+| **Billing** | Wrong amount, double charge | Verify invoice → refund or credit |
+| **Service / Support** | Unhelpful agent, delayed response | Escalate → Supervisor |
+| **Safety / Health** | Product caused injury | Immediate product recall process |
+| **Other / Miscellaneous** | Complaints about website usability | Escalate to UX team |
+
+---
+
+**End of Policy**
+
+Agents should keep a copy of this manual on their workspace, review the policy before each shift, and refer to it whenever they encounter uncertainties in complaint resolution.
+
+---
+
+**Appendix A – Complaint Taxonomy**
+
+| Category | Examples | Next Step |
+|----------|----------|-----------|
+| **Product Quality** | Broken part, wrong color, not functioning | Warranty check → return / replacement |
+| **Delivery / Shipping** | Late delivery, lost package, damaged packaging | Log logistics ticket → shipping follow‑up |
+| **Billing** | Wrong amount, double charge | Verify invoice → refund or credit |
+| **Service / Support** | Unhelpful agent, delayed response | Escalate → Supervisor |
+| **Safety / Health** | Product caused injury | Immediate product recall process |
+| **Other / Miscellaneous** | Complaints about website usability | Escalate to UX team |
+
+---
+
+**End of Policy**
+
+Agents should keep a copy of this manual on their workspace, review the policy before each shift, and refer to it whenever they encounter uncertainties in complaint resolution.","[{'role': 'user', 'content': 'I would like to return my order #12345. The shoes are broken.'}, {'role': 'assistant', 'content': 'Thank you for contacting us. I have logged your request under ticket #98765. May I have your order number to verify your identity?'}, {'role': 'user', 'content': ""Sure, it's 12345.""}, {'role': 'assistant', 'content': 'Thank you. Can you please describe the issue and if possible provide a photo of the damaged shoes?'}, {'role': 'user', 'content': 'The left shoe is cracked. I attached a photo.'}]","{'role': 'assistant', 'content': 'I see the damage. Since your order was placed within the last 30 days, you are eligible for a full refund. Would you like to proceed with a return? If so, we will send you a prepaid return shipping label. Once we receive the item, we will process the refund. Is there anything else I can help you with today?'}"
+True,Pass,"### 1. Purpose
+To provide a consistent, customer‑centric, and compliant process that lets our support agents resolve complaints efficiently and fairly while protecting the company’s reputation and legal interests.
+
+### 2. Scope
+This policy applies to all live chat, email, phone, and social‑media interactions where a customer has expressed dissatisfaction with any product, service, or transactional element of our brand.
+
+### 3. Definitions
+| Term | Meaning |
+|------|---------|
+| **Customer Complaint** | Any expressed concern or dissatisfaction that could result in a loss of confidence, request for refund/replacement, or potential negative review. |
+| **Escalation** | Transfer of a complaint to a higher‑level authority (e.g., Supervisor, Legal, Finance, or product manager). |
+| **Resolution** | The final outcome after which the complaint is considered closed – e.g., refund, replacement, repair, or acknowledgement of a grievance. |
+| **Time‑to‑Acknowledge (TTA)** | Max 2 h (live chat), 24 h (email), 48 h (social). |
+| **Time‑to‑Resolve (TTR)** | Max 7 days for non‑critical, 3 days for high‑priority complaints. |
+| **Critical Complaint** | Issues that threaten brand safety, involve safety concerns, legal liability, or involve a loss > $500. |
+
+### 4. Step‑by‑Step Complaint Handling Process
+
+| # | Step | Action | Decision Point | Required Output |
+|---|------|--------|----------------|-----------------|
+| 1 | **Receipt & Logging** | Log the complaint immediately into the CRM. Pull ticket #, customer name, contact details, channel. | – | Ticket created, unique ID. |
+| 2 | **Acknowledgement** | Send a courteous response (“Thank you for notifying us. We’re on it.”). Provide ticket # and expected response time. | – | Acknowledgment email/ message sent with TTA details. |
+| 3 | **Verify Identity** | “Can you please provide your order number or last four digits of the credit card?” | If identity cannot be verified → “We cannot proceed without verifying your identity.” Send “Unable to process your request’ link. | Identity verified record. |
+| 4 | **Collect Complaint Details** | Ask specific, open‑ended questions: 
+• What exactly is the problem? 
+• When did you notice it? 
+• Has it been reported earlier? 
+• Do you have photos, screenshots, or other evidence? | If the complaint lacks key data → “Could you provide more details or evidence?” | Full description, evidence files. |
+| 5 | **Classify the Complaint** | Use the **Complaint Taxonomy** (see Appendix A). Classifications: 
+• Product quality 
+• Delivery/ shipping 
+• Service/ support 
+• Billing & Finance 
+• Other | • **Product quality** → Proceed to *product‑return flow.* 
+• **Delivery/ shipping** → Check shipping SLA. 
+• **Billing** → Verify invoice. 
+• **Security/ Safety** → Escalate immediately. | Complaint category recorded. |
+| 6 | **Check Policy & Eligibility** | Cross‑reference the complaint category with: 
+• Warranty policy (2 yrs). 
+• Return window (30 days). 
+• Refund limits. 
+• Legal guidelines (GDPR, consumer rights). | • **Eligible** → Go to *resolution offer.* 
+• **Not eligible** → Provide transparent reasoning and next steps. | Eligibility status. |
+| 7 | **Offer Initial Resolution** | Draft a tailored response: 
+• “We can replace the item, refund, repair, or offer a $X credit.” 
+• Attach relevant terms of service. 
+• Offer next steps (return shipping label, repair instructions, payment reference). | • **Customer accepts** → Proceed to *process resolution.* 
+• **Customer rejects** → Ask for preferred solution or log the complaint for *escalation.* | Resolution offer recorded. |
+| 8 | **Escalate if Required** | When: 
+• Loss > $500. 
+• Safety or legal risk. 
+• Customer threatens legal action. 
+• Conflict of interest. 
+Send ticket and summary to *Escalation Manager* through the designated form. | Supervisor approves → Move to *special handling.* | Escalation ticket created. |
+| 9 | **Process the Resolution** | • **Refund** – Trigger finance system, set payment method. 
+• **Replacement** – Print pick‑up label, ship new product. 
+• **Repair** – Coordinate with product team. 
+• **Credit** – Adjust account balance. | • Completed – Notify customer with confirmation. | Resolution processed, status updated. |
+|10| **Quality Assurance & Feedback** | Ask: “Was the issue resolved to your satisfaction?”
+• If Yes → Close ticket. 
+• If No → Re‑enter **Step 5** and offer further assistance. | – | Customer satisfaction recorded. |
+|11| **Documentation & Closure** | • Populate the *Complaint Closure Form.* 
+• Log final resolution, dates, agent details, escalation levels. 
+• Attach any evidence or email threads. 
+• Flag for quarterly review (e.g., repeated complaint type). | – | Ticket closed, audit trail preserved. |
+
+### 5. Escalation Pathways
+
+| Complaint Type | Escalation Trigger | Who Escalates | Who Receives | Action Needed |
+|-----------------|-------------------|---------------|--------------|---------------|
+| **Large financial loss > $500** | Auto‑flag in CRM | Agent | Finance Manager | 1 h review, approval. |
+| **Safety / health risk** | Any reported safety issue | Agent | Product Safety Lead | Immediate resolution & incident report. |
+| **Legal / regulatory** | GDPR violations, legal threats | Agent | Legal Counsel | Incident report, counsel's response. |
+| **High‑volume product defects** | > 10 reports in 24 h | Agent | Product Manager | Root‑cause analysis, product recall decision. |
+
+### 6. Customer Communication Standards
+
+| Channel | TTA | TTR | Tone |
+|---------|-----|-----|------|
+| Live Chat | ≤ 2 h | ≤ 3 days (critical) | Friendly, proactive |
+| Email | ≤ 24 h | ≤ 3 days | Professional, empathetic |
+| Phone | Immediate | Immediate | Personal, solution‑oriented |
+| Social | ≤ 12 h | ≤ 3 days | Publicly courteous, invite DM for details |
+
+- **Acknowledgement** must contain:
+  - Ticket #
+  - Expected resolution window
+  - Contact info of the handling agent
+
+- **Resolution communication** must include:
+  - What happened (“We will refund X” or “New device will arrive”).
+  - When & how you’ll act (“Shipping label attached”).
+  - Next steps & contact for questions.
+
+### 7. Documentation & Data Retention
+
+| Document | Retention Period | Who Owns | Storage |
+|----------|------------------|----------|---------|
+| Ticket Transcript | 5 years (or long‑term if legal claim pending) | Support & Legal | Encrypted CRM / Cloud |
+| E‑mail Attachments | 5 years | Support | Secure S3 / Share‑Point |
+| Escalation Forms | 5 years | Escalation Manager | CRM archival |
+| Customer Feedback | Until next quarterly review | CS Manager | CRM dashboards |
+
+All records must be GDPR‑compliant: only personal data needed for resolution is retained; auto‑destruct after retention ends.
+
+### 8. Key Performance Indicators (KPIs)
+
+| KPI | Target | Frequency |
+|-----|--------|-----------|
+| **Average Time to Acknowledge (TTA)** | ≤ 2 h | Monthly |
+| **Average Time to Resolve (TTR)** | ≤ 7 days (overall), ≤ 3 days (critical) | Monthly |
+| **First‑Contact Resolution (FCR)** | ≥ 70 % | Monthly |
+| **Escalation Rate** | ≤ 5 % of total complaints | Monthly |
+| **Customer Satisfaction (CSAT)** | ≥ 4.5/5 | Quarterly |
+
+### 9. Training & Competency
+
+- All new support agents must complete **Complaint Handling 101** (2 h) before starting live tickets.
+- Quarterly refresher courses cover: policy updates, product changes, escalation procedures.
+- Role‑play scenarios are assessed; score ≥ 90 % for advanced support certification.
+
+### 10. FAQ – Common Agent Questions
+
+| Question | Answer |
+|----------|--------|
+| *Can I process a refund without escalation if the amount is under $500?* | Yes, but verify with Finance via the “Refund Request” form before processing. |
+| *I don’t have a photo of the damage. What now?* | Offer a “self‑photos” request; if unavailable, we can still process a return based on description, but document risk. |
+| *What to do if a customer says they’ll “take legal action”?* | Escalate immediately to *Legal Counsel* and preserve all communication. |
+
+**Appendix A – Complaint Taxonomy**
+
+| Category | Examples | Next Step |
+|----------|----------|-----------|
+| **Product Quality** | Broken part, wrong color, not functioning | Warranty check → return / replacement |
+| **Delivery / Shipping** | Late delivery, lost package, damaged packaging | Log logistics ticket → shipping follow‑up |
+| **Billing** | Wrong amount, double charge | Verify invoice → refund or credit |
+| **Service / Support** | Unhelpful agent, delayed response | Escalate → Supervisor |
+| **Safety / Health** | Product caused injury | Immediate product recall process |
+| **Other / Miscellaneous** | Complaints about website usability | Escalate to UX team |
+
+---
+
+**End of Policy**
+
+Agents should keep a copy of this manual on their workspace, review the policy before each shift, and refer to it whenever they encounter uncertainties in complaint resolution.
+
+---
+
+**Appendix A – Complaint Taxonomy**
+
+| Category | Examples | Next Step |
+|----------|----------|-----------|
+| **Product Quality** | Broken part, wrong color, not functioning | Warranty check → return / replacement |
+| **Delivery / Shipping** | Late delivery, lost package, damaged packaging | Log logistics ticket → shipping follow‑up |
+| **Billing** | Wrong amount, double charge | Verify invoice → refund or credit |
+| **Service / Support** | Unhelpful agent, delayed response | Escalate → Supervisor |
+| **Safety / Health** | Product caused injury | Immediate product recall process |
+| **Other / Miscellaneous** | Complaints about website usability | Escalate to UX team |
+
+---
+
+**End of Policy**
+
+Agents should keep a copy of this manual on their workspace, review the policy before each shift, and refer to it whenever they encounter uncertainties in complaint resolution.","[{'role': 'user', 'content': 'I would like to return my order #12345. The shoes are broken.'}, {'role': 'assistant', 'content': 'Thank you for contacting us. I have logged your request under ticket #98765. May I have your order number to verify your identity?'}, {'role': 'user', 'content': ""Sure, it's 12345.""}, {'role': 'assistant', 'content': 'Thank you. Can you please describe the issue and if possible provide a photo of the damaged shoes?'}, {'role': 'user', 'content': 'The left shoe is cracked. I attached a photo.'}]","{'role': 'assistant', 'content': 'I see the damage. Since your order was placed within the last 30 days, you are eligible for a full refund. Would you like to proceed with a return? If so, we will send you a prepaid return shipping label. Once we receive the item, we will process the refund. Is there anything else I can help you with today?'}"
+True,Pass,"### 1. Purpose
+To provide a consistent, customer‑centric, and compliant process that lets our support agents resolve complaints efficiently and fairly while protecting the company’s reputation and legal interests.
+
+### 2. Scope
+This policy applies to all live chat, email, phone, and social‑media interactions where a customer has expressed dissatisfaction with any product, service, or transactional element of our brand.
+
+### 3. Definitions
+| Term | Meaning |
+|------|---------|
+| **Customer Complaint** | Any expressed concern or dissatisfaction that could result in a loss of confidence, request for refund/replacement, or potential negative review. |
+| **Escalation** | Transfer of a complaint to a higher‑level authority (e.g., Supervisor, Legal, Finance, or product manager). |
+| **Resolution** | The final outcome after which the complaint is considered closed – e.g., refund, replacement, repair, or acknowledgement of a grievance. |
+| **Time‑to‑Acknowledge (TTA)** | Max 2 h (live chat), 24 h (email), 48 h (social). |
+| **Time‑to‑Resolve (TTR)** | Max 7 days for non‑critical, 3 days for high‑priority complaints. |
+| **Critical Complaint** | Issues that threaten brand safety, involve safety concerns, legal liability, or involve a loss > $500. |
+
+### 4. Step‑by‑Step Complaint Handling Process
+
+| # | Step | Action | Decision Point | Required Output |
+|---|------|--------|----------------|-----------------|
+| 1 | **Receipt & Logging** | Log the complaint immediately into the CRM. Pull ticket #, customer name, contact details, channel. | – | Ticket created, unique ID. |
+| 2 | **Acknowledgement** | Send a courteous response (“Thank you for notifying us. We’re on it.”). Provide ticket # and expected response time. | – | Acknowledgment email/ message sent with TTA details. |
+| 3 | **Verify Identity** | “Can you please provide your order number or last four digits of the credit card?” | If identity cannot be verified → “We cannot proceed without verifying your identity.” Send “Unable to process your request’ link. | Identity verified record. |
+| 4 | **Collect Complaint Details** | Ask specific, open‑ended questions: 
+• What exactly is the problem? 
+• When did you notice it? 
+• Has it been reported earlier? 
+• Do you have photos, screenshots, or other evidence? | If the complaint lacks key data → “Could you provide more details or evidence?” | Full description, evidence files. |
+| 5 | **Classify the Complaint** | Use the **Complaint Taxonomy** (see Appendix A). Classifications: 
+• Product quality 
+• Delivery/ shipping 
+• Service/ support 
+• Billing & Finance 
+• Other | • **Product quality** → Proceed to *product‑return flow.* 
+• **Delivery/ shipping** → Check shipping SLA. 
+• **Billing** → Verify invoice. 
+• **Security/ Safety** → Escalate immediately. | Complaint category recorded. |
+| 6 | **Check Policy & Eligibility** | Cross‑reference the complaint category with: 
+• Warranty policy (2 yrs). 
+• Return window (30 days). 
+• Refund limits. 
+• Legal guidelines (GDPR, consumer rights). | • **Eligible** → Go to *resolution offer.* 
+• **Not eligible** → Provide transparent reasoning and next steps. | Eligibility status. |
+| 7 | **Offer Initial Resolution** | Draft a tailored response: 
+• “We can replace the item, refund, repair, or offer a $X credit.” 
+• Attach relevant terms of service. 
+• Offer next steps (return shipping label, repair instructions, payment reference). | • **Customer accepts** → Proceed to *process resolution.* 
+• **Customer rejects** → Ask for preferred solution or log the complaint for *escalation.* | Resolution offer recorded. |
+| 8 | **Escalate if Required** | When: 
+• Loss > $500. 
+• Safety or legal risk. 
+• Customer threatens legal action. 
+• Conflict of interest. 
+Send ticket and summary to *Escalation Manager* through the designated form. | Supervisor approves → Move to *special handling.* | Escalation ticket created. |
+| 9 | **Process the Resolution** | • **Refund** – Trigger finance system, set payment method. 
+• **Replacement** – Print pick‑up label, ship new product. 
+• **Repair** – Coordinate with product team. 
+• **Credit** – Adjust account balance. | • Completed – Notify customer with confirmation. | Resolution processed, status updated. |
+|10| **Quality Assurance & Feedback** | Ask: “Was the issue resolved to your satisfaction?”
+• If Yes → Close ticket. 
+• If No → Re‑enter **Step 5** and offer further assistance. | – | Customer satisfaction recorded. |
+|11| **Documentation & Closure** | • Populate the *Complaint Closure Form.* 
+• Log final resolution, dates, agent details, escalation levels. 
+• Attach any evidence or email threads. 
+• Flag for quarterly review (e.g., repeated complaint type). | – | Ticket closed, audit trail preserved. |
+
+### 5. Escalation Pathways
+
+| Complaint Type | Escalation Trigger | Who Escalates | Who Receives | Action Needed |
+|-----------------|-------------------|---------------|--------------|---------------|
+| **Large financial loss > $500** | Auto‑flag in CRM | Agent | Finance Manager | 1 h review, approval. |
+| **Safety / health risk** | Any reported safety issue | Agent | Product Safety Lead | Immediate resolution & incident report. |
+| **Legal / regulatory** | GDPR violations, legal threats | Agent | Legal Counsel | Incident report, counsel's response. |
+| **High‑volume product defects** | > 10 reports in 24 h | Agent | Product Manager | Root‑cause analysis, product recall decision. |
+
+### 6. Customer Communication Standards
+
+| Channel | TTA | TTR | Tone |
+|---------|-----|-----|------|
+| Live Chat | ≤ 2 h | ≤ 3 days (critical) | Friendly, proactive |
+| Email | ≤ 24 h | ≤ 3 days | Professional, empathetic |
+| Phone | Immediate | Immediate | Personal, solution‑oriented |
+| Social | ≤ 12 h | ≤ 3 days | Publicly courteous, invite DM for details |
+
+- **Acknowledgement** must contain:
+  - Ticket #
+  - Expected resolution window
+  - Contact info of the handling agent
+
+- **Resolution communication** must include:
+  - What happened (“We will refund X” or “New device will arrive”).
+  - When & how you’ll act (“Shipping label attached”).
+  - Next steps & contact for questions.
+
+### 7. Documentation & Data Retention
+
+| Document | Retention Period | Who Owns | Storage |
+|----------|------------------|----------|---------|
+| Ticket Transcript | 5 years (or long‑term if legal claim pending) | Support & Legal | Encrypted CRM / Cloud |
+| E‑mail Attachments | 5 years | Support | Secure S3 / Share‑Point |
+| Escalation Forms | 5 years | Escalation Manager | CRM archival |
+| Customer Feedback | Until next quarterly review | CS Manager | CRM dashboards |
+
+All records must be GDPR‑compliant: only personal data needed for resolution is retained; auto‑destruct after retention ends.
+
+### 8. Key Performance Indicators (KPIs)
+
+| KPI | Target | Frequency |
+|-----|--------|-----------|
+| **Average Time to Acknowledge (TTA)** | ≤ 2 h | Monthly |
+| **Average Time to Resolve (TTR)** | ≤ 7 days (overall), ≤ 3 days (critical) | Monthly |
+| **First‑Contact Resolution (FCR)** | ≥ 70 % | Monthly |
+| **Escalation Rate** | ≤ 5 % of total complaints | Monthly |
+| **Customer Satisfaction (CSAT)** | ≥ 4.5/5 | Quarterly |
+
+### 9. Training & Competency
+
+- All new support agents must complete **Complaint Handling 101** (2 h) before starting live tickets.
+- Quarterly refresher courses cover: policy updates, product changes, escalation procedures.
+- Role‑play scenarios are assessed; score ≥ 90 % for advanced support certification.
+
+### 10. FAQ – Common Agent Questions
+
+| Question | Answer |
+|----------|--------|
+| *Can I process a refund without escalation if the amount is under $500?* | Yes, but verify with Finance via the “Refund Request” form before processing. |
+| *I don’t have a photo of the damage. What now?* | Offer a “self‑photos” request; if unavailable, we can still process a return based on description, but document risk. |
+| *What to do if a customer says they’ll “take legal action”?* | Escalate immediately to *Legal Counsel* and preserve all communication. |
+
+**Appendix A – Complaint Taxonomy**
+
+| Category | Examples | Next Step |
+|----------|----------|-----------|
+| **Product Quality** | Broken part, wrong color, not functioning | Warranty check → return / replacement |
+| **Delivery / Shipping** | Late delivery, lost package, damaged packaging | Log logistics ticket → shipping follow‑up |
+| **Billing** | Wrong amount, double charge | Verify invoice → refund or credit |
+| **Service / Support** | Unhelpful agent, delayed response | Escalate → Supervisor |
+| **Safety / Health** | Product caused injury | Immediate product recall process |
+| **Other / Miscellaneous** | Complaints about website usability | Escalate to UX team |
+
+---
+
+**End of Policy**
+
+Agents should keep a copy of this manual on their workspace, review the policy before each shift, and refer to it whenever they encounter uncertainties in complaint resolution.
+
+---
+
+**Appendix A – Complaint Taxonomy**
+
+| Category | Examples | Next Step |
+|----------|----------|-----------|
+| **Product Quality** | Broken part, wrong color, not functioning | Warranty check → return / replacement |
+| **Delivery / Shipping** | Late delivery, lost package, damaged packaging | Log logistics ticket → shipping follow‑up |
+| **Billing** | Wrong amount, double charge | Verify invoice → refund or credit |
+| **Service / Support** | Unhelpful agent, delayed response | Escalate → Supervisor |
+| **Safety / Health** | Product caused injury | Immediate product recall process |
+| **Other / Miscellaneous** | Complaints about website usability | Escalate to UX team |
+
+---
+
+**End of Policy**
+
+Agents should keep a copy of this manual on their workspace, review the policy before each shift, and refer to it whenever they encounter uncertainties in complaint resolution.","[{'role': 'user', 'content': 'I would like to return my order #12345. The shoes are broken.'}, {'role': 'assistant', 'content': 'Thank you for contacting us. I have logged your request under ticket #98765. May I have your order number to verify your identity?'}, {'role': 'user', 'content': ""Sure, it's 12345.""}, {'role': 'assistant', 'content': 'Thank you. Can you please describe the issue and if possible provide a photo of the damaged shoes?'}, {'role': 'user', 'content': 'The left shoe is cracked. I attached a photo.'}]","{'role': 'assistant', 'content': 'I see the damage. Since your order was placed within the last 30 days, you are eligible for a full refund. Would you like to proceed with a return? If so, we will send you a prepaid return shipping label. Once we receive the item, we will process the refund. Is there anything else I can help you with today?'}"
+True,Pass,"### 1. Purpose
+To provide a consistent, customer‑centric, and compliant process that lets our support agents resolve complaints efficiently and fairly while protecting the company’s reputation and legal interests.
+
+### 2. Scope
+This policy applies to all live chat, email, phone, and social‑media interactions where a customer has expressed dissatisfaction with any product, service, or transactional element of our brand.
+
+### 3. Definitions
+| Term | Meaning |
+|------|---------|
+| **Customer Complaint** | Any expressed concern or dissatisfaction that could result in a loss of confidence, request for refund/replacement, or potential negative review. |
+| **Escalation** | Transfer of a complaint to a higher‑level authority (e.g., Supervisor, Legal, Finance, or product manager). |
+| **Resolution** | The final outcome after which the complaint is considered closed – e.g., refund, replacement, repair, or acknowledgement of a grievance. |
+| **Time‑to‑Acknowledge (TTA)** | Max 2 h (live chat), 24 h (email), 48 h (social). |
+| **Time‑to‑Resolve (TTR)** | Max 7 days for non‑critical, 3 days for high‑priority complaints. |
+| **Critical Complaint** | Issues that threaten brand safety, involve safety concerns, legal liability, or involve a loss > $500. |
+
+### 4. Step‑by‑Step Complaint Handling Process
+
+| # | Step | Action | Decision Point | Required Output |
+|---|------|--------|----------------|-----------------|
+| 1 | **Receipt & Logging** | Log the complaint immediately into the CRM. Pull ticket #, customer name, contact details, channel. | – | Ticket created, unique ID. |
+| 2 | **Acknowledgement** | Send a courteous response (“Thank you for notifying us. We’re on it.”). Provide ticket # and expected response time. | – | Acknowledgment email/ message sent with TTA details. |
+| 3 | **Verify Identity** | “Can you please provide your order number or last four digits of the credit card?” | If identity cannot be verified → “We cannot proceed without verifying your identity.” Send “Unable to process your request’ link. | Identity verified record. |
+| 4 | **Collect Complaint Details** | Ask specific, open‑ended questions: 
+• What exactly is the problem? 
+• When did you notice it? 
+• Has it been reported earlier? 
+• Do you have photos, screenshots, or other evidence? | If the complaint lacks key data → “Could you provide more details or evidence?” | Full description, evidence files. |
+| 5 | **Classify the Complaint** | Use the **Complaint Taxonomy** (see Appendix A). Classifications: 
+• Product quality 
+• Delivery/ shipping 
+• Service/ support 
+• Billing & Finance 
+• Other | • **Product quality** → Proceed to *product‑return flow.* 
+• **Delivery/ shipping** → Check shipping SLA. 
+• **Billing** → Verify invoice. 
+• **Security/ Safety** → Escalate immediately. | Complaint category recorded. |
+| 6 | **Check Policy & Eligibility** | Cross‑reference the complaint category with: 
+• Warranty policy (2 yrs). 
+• Return window (30 days). 
+• Refund limits. 
+• Legal guidelines (GDPR, consumer rights). | • **Eligible** → Go to *resolution offer.* 
+• **Not eligible** → Provide transparent reasoning and next steps. | Eligibility status. |
+| 7 | **Offer Initial Resolution** | Draft a tailored response: 
+• “We can replace the item, refund, repair, or offer a $X credit.” 
+• Attach relevant terms of service. 
+• Offer next steps (return shipping label, repair instructions, payment reference). | • **Customer accepts** → Proceed to *process resolution.* 
+• **Customer rejects** → Ask for preferred solution or log the complaint for *escalation.* | Resolution offer recorded. |
+| 8 | **Escalate if Required** | When: 
+• Loss > $500. 
+• Safety or legal risk. 
+• Customer threatens legal action. 
+• Conflict of interest. 
+Send ticket and summary to *Escalation Manager* through the designated form. | Supervisor approves → Move to *special handling.* | Escalation ticket created. |
+| 9 | **Process the Resolution** | • **Refund** – Trigger finance system, set payment method. 
+• **Replacement** – Print pick‑up label, ship new product. 
+• **Repair** – Coordinate with product team. 
+• **Credit** – Adjust account balance. | • Completed – Notify customer with confirmation. | Resolution processed, status updated. |
+|10| **Quality Assurance & Feedback** | Ask: “Was the issue resolved to your satisfaction?”
+• If Yes → Close ticket. 
+• If No → Re‑enter **Step 5** and offer further assistance. | – | Customer satisfaction recorded. |
+|11| **Documentation & Closure** | • Populate the *Complaint Closure Form.* 
+• Log final resolution, dates, agent details, escalation levels. 
+• Attach any evidence or email threads. 
+• Flag for quarterly review (e.g., repeated complaint type). | – | Ticket closed, audit trail preserved. |
+
+### 5. Escalation Pathways
+
+| Complaint Type | Escalation Trigger | Who Escalates | Who Receives | Action Needed |
+|-----------------|-------------------|---------------|--------------|---------------|
+| **Large financial loss > $500** | Auto‑flag in CRM | Agent | Finance Manager | 1 h review, approval. |
+| **Safety / health risk** | Any reported safety issue | Agent | Product Safety Lead | Immediate resolution & incident report. |
+| **Legal / regulatory** | GDPR violations, legal threats | Agent | Legal Counsel | Incident report, counsel's response. |
+| **High‑volume product defects** | > 10 reports in 24 h | Agent | Product Manager | Root‑cause analysis, product recall decision. |
+
+### 6. Customer Communication Standards
+
+| Channel | TTA | TTR | Tone |
+|---------|-----|-----|------|
+| Live Chat | ≤ 2 h | ≤ 3 days (critical) | Friendly, proactive |
+| Email | ≤ 24 h | ≤ 3 days | Professional, empathetic |
+| Phone | Immediate | Immediate | Personal, solution‑oriented |
+| Social | ≤ 12 h | ≤ 3 days | Publicly courteous, invite DM for details |
+
+- **Acknowledgement** must contain:
+  - Ticket #
+  - Expected resolution window
+  - Contact info of the handling agent
+
+- **Resolution communication** must include:
+  - What happened (“We will refund X” or “New device will arrive”).
+  - When & how you’ll act (“Shipping label attached”).
+  - Next steps & contact for questions.
+
+### 7. Documentation & Data Retention
+
+| Document | Retention Period | Who Owns | Storage |
+|----------|------------------|----------|---------|
+| Ticket Transcript | 5 years (or long‑term if legal claim pending) | Support & Legal | Encrypted CRM / Cloud |
+| E‑mail Attachments | 5 years | Support | Secure S3 / Share‑Point |
+| Escalation Forms | 5 years | Escalation Manager | CRM archival |
+| Customer Feedback | Until next quarterly review | CS Manager | CRM dashboards |
+
+All records must be GDPR‑compliant: only personal data needed for resolution is retained; auto‑destruct after retention ends.
+
+### 8. Key Performance Indicators (KPIs)
+
+| KPI | Target | Frequency |
+|-----|--------|-----------|
+| **Average Time to Acknowledge (TTA)** | ≤ 2 h | Monthly |
+| **Average Time to Resolve (TTR)** | ≤ 7 days (overall), ≤ 3 days (critical) | Monthly |
+| **First‑Contact Resolution (FCR)** | ≥ 70 % | Monthly |
+| **Escalation Rate** | ≤ 5 % of total complaints | Monthly |
+| **Customer Satisfaction (CSAT)** | ≥ 4.5/5 | Quarterly |
+
+### 9. Training & Competency
+
+- All new support agents must complete **Complaint Handling 101** (2 h) before starting live tickets.
+- Quarterly refresher courses cover: policy updates, product changes, escalation procedures.
+- Role‑play scenarios are assessed; score ≥ 90 % for advanced support certification.
+
+### 10. FAQ – Common Agent Questions
+
+| Question | Answer |
+|----------|--------|
+| *Can I process a refund without escalation if the amount is under $500?* | Yes, but verify with Finance via the “Refund Request” form before processing. |
+| *I don’t have a photo of the damage. What now?* | Offer a “self‑photos” request; if unavailable, we can still process a return based on description, but document risk. |
+| *What to do if a customer says they’ll “take legal action”?* | Escalate immediately to *Legal Counsel* and preserve all communication. |
+
+**Appendix A – Complaint Taxonomy**
+
+| Category | Examples | Next Step |
+|----------|----------|-----------|
+| **Product Quality** | Broken part, wrong color, not functioning | Warranty check → return / replacement |
+| **Delivery / Shipping** | Late delivery, lost package, damaged packaging | Log logistics ticket → shipping follow‑up |
+| **Billing** | Wrong amount, double charge | Verify invoice → refund or credit |
+| **Service / Support** | Unhelpful agent, delayed response | Escalate → Supervisor |
+| **Safety / Health** | Product caused injury | Immediate product recall process |
+| **Other / Miscellaneous** | Complaints about website usability | Escalate to UX team |
+
+---
+
+**End of Policy**
+
+Agents should keep a copy of this manual on their workspace, review the policy before each shift, and refer to it whenever they encounter uncertainties in complaint resolution.
+
+---
+
+**Appendix A – Complaint Taxonomy**
+
+| Category | Examples | Next Step |
+|----------|----------|-----------|
+| **Product Quality** | Broken part, wrong color, not functioning | Warranty check → return / replacement |
+| **Delivery / Shipping** | Late delivery, lost package, damaged packaging | Log logistics ticket → shipping follow‑up |
+| **Billing** | Wrong amount, double charge | Verify invoice → refund or credit |
+| **Service / Support** | Unhelpful agent, delayed response | Escalate → Supervisor |
+| **Safety / Health** | Product caused injury | Immediate product recall process |
+| **Other / Miscellaneous** | Complaints about website usability | Escalate to UX team |
+
+---
+
+**End of Policy**
+
+Agents should keep a copy of this manual on their workspace, review the policy before each shift, and refer to it whenever they encounter uncertainties in complaint resolution.","[{'role': 'user', 'content': 'I would like to return my order #12345. The shoes are broken.'}, {'role': 'assistant', 'content': 'Thank you for contacting us. I have logged your request under ticket #98765. May I have your order number to verify your identity?'}, {'role': 'user', 'content': ""Sure, it's 12345.""}, {'role': 'assistant', 'content': 'Thank you. Can you please describe the issue and if possible provide a photo of the damaged shoes?'}, {'role': 'user', 'content': 'The left shoe is cracked. I attached a photo.'}]","{'role': 'assistant', 'content': 'I see the damage. Since your order was placed within the last 30 days, you are eligible for a full refund. Would you like to proceed with a return? If so, we will send you a prepaid return shipping label. Once we receive the item, we will process the refund. Is there anything else I can help you with today?'}"
+True,Pass,"### 1. Purpose
+To provide a consistent, customer‑centric, and compliant process that lets our support agents resolve complaints efficiently and fairly while protecting the company’s reputation and legal interests.
+
+### 2. Scope
+This policy applies to all live chat, email, phone, and social‑media interactions where a customer has expressed dissatisfaction with any product, service, or transactional element of our brand.
+
+### 3. Definitions
+| Term | Meaning |
+|------|---------|
+| **Customer Complaint** | Any expressed concern or dissatisfaction that could result in a loss of confidence, request for refund/replacement, or potential negative review. |
+| **Escalation** | Transfer of a complaint to a higher‑level authority (e.g., Supervisor, Legal, Finance, or product manager). |
+| **Resolution** | The final outcome after which the complaint is considered closed – e.g., refund, replacement, repair, or acknowledgement of a grievance. |
+| **Time‑to‑Acknowledge (TTA)** | Max 2 h (live chat), 24 h (email), 48 h (social). |
+| **Time‑to‑Resolve (TTR)** | Max 7 days for non‑critical, 3 days for high‑priority complaints. |
+| **Critical Complaint** | Issues that threaten brand safety, involve safety concerns, legal liability, or involve a loss > $500. |
+
+### 4. Step‑by‑Step Complaint Handling Process
+
+| # | Step | Action | Decision Point | Required Output |
+|---|------|--------|----------------|-----------------|
+| 1 | **Receipt & Logging** | Log the complaint immediately into the CRM. Pull ticket #, customer name, contact details, channel. | – | Ticket created, unique ID. |
+| 2 | **Acknowledgement** | Send a courteous response (“Thank you for notifying us. We’re on it.”). Provide ticket # and expected response time. | – | Acknowledgment email/ message sent with TTA details. |
+| 3 | **Verify Identity** | “Can you please provide your order number or last four digits of the credit card?” | If identity cannot be verified → “We cannot proceed without verifying your identity.” Send “Unable to process your request’ link. | Identity verified record. |
+| 4 | **Collect Complaint Details** | Ask specific, open‑ended questions: 
+• What exactly is the problem? 
+• When did you notice it? 
+• Has it been reported earlier? 
+• Do you have photos, screenshots, or other evidence? | If the complaint lacks key data → “Could you provide more details or evidence?” | Full description, evidence files. |
+| 5 | **Classify the Complaint** | Use the **Complaint Taxonomy** (see Appendix A). Classifications: 
+• Product quality 
+• Delivery/ shipping 
+• Service/ support 
+• Billing & Finance 
+• Other | • **Product quality** → Proceed to *product‑return flow.* 
+• **Delivery/ shipping** → Check shipping SLA. 
+• **Billing** → Verify invoice. 
+• **Security/ Safety** → Escalate immediately. | Complaint category recorded. |
+| 6 | **Check Policy & Eligibility** | Cross‑reference the complaint category with: 
+• Warranty policy (2 yrs). 
+• Return window (30 days). 
+• Refund limits. 
+• Legal guidelines (GDPR, consumer rights). | • **Eligible** → Go to *resolution offer.* 
+• **Not eligible** → Provide transparent reasoning and next steps. | Eligibility status. |
+| 7 | **Offer Initial Resolution** | Draft a tailored response: 
+• “We can replace the item, refund, repair, or offer a $X credit.” 
+• Attach relevant terms of service. 
+• Offer next steps (return shipping label, repair instructions, payment reference). | • **Customer accepts** → Proceed to *process resolution.* 
+• **Customer rejects** → Ask for preferred solution or log the complaint for *escalation.* | Resolution offer recorded. |
+| 8 | **Escalate if Required** | When: 
+• Loss > $500. 
+• Safety or legal risk. 
+• Customer threatens legal action. 
+• Conflict of interest. 
+Send ticket and summary to *Escalation Manager* through the designated form. | Supervisor approves → Move to *special handling.* | Escalation ticket created. |
+| 9 | **Process the Resolution** | • **Refund** – Trigger finance system, set payment method. 
+• **Replacement** – Print pick‑up label, ship new product. 
+• **Repair** – Coordinate with product team. 
+• **Credit** – Adjust account balance. | • Completed – Notify customer with confirmation. | Resolution processed, status updated. |
+|10| **Quality Assurance & Feedback** | Ask: “Was the issue resolved to your satisfaction?”
+• If Yes → Close ticket. 
+• If No → Re‑enter **Step 5** and offer further assistance. | – | Customer satisfaction recorded. |
+|11| **Documentation & Closure** | • Populate the *Complaint Closure Form.* 
+• Log final resolution, dates, agent details, escalation levels. 
+• Attach any evidence or email threads. 
+• Flag for quarterly review (e.g., repeated complaint type). | – | Ticket closed, audit trail preserved. |
+
+### 5. Escalation Pathways
+
+| Complaint Type | Escalation Trigger | Who Escalates | Who Receives | Action Needed |
+|-----------------|-------------------|---------------|--------------|---------------|
+| **Large financial loss > $500** | Auto‑flag in CRM | Agent | Finance Manager | 1 h review, approval. |
+| **Safety / health risk** | Any reported safety issue | Agent | Product Safety Lead | Immediate resolution & incident report. |
+| **Legal / regulatory** | GDPR violations, legal threats | Agent | Legal Counsel | Incident report, counsel's response. |
+| **High‑volume product defects** | > 10 reports in 24 h | Agent | Product Manager | Root‑cause analysis, product recall decision. |
+
+### 6. Customer Communication Standards
+
+| Channel | TTA | TTR | Tone |
+|---------|-----|-----|------|
+| Live Chat | ≤ 2 h | ≤ 3 days (critical) | Friendly, proactive |
+| Email | ≤ 24 h | ≤ 3 days | Professional, empathetic |
+| Phone | Immediate | Immediate | Personal, solution‑oriented |
+| Social | ≤ 12 h | ≤ 3 days | Publicly courteous, invite DM for details |
+
+- **Acknowledgement** must contain:
+  - Ticket #
+  - Expected resolution window
+  - Contact info of the handling agent
+
+- **Resolution communication** must include:
+  - What happened (“We will refund X” or “New device will arrive”).
+  - When & how you’ll act (“Shipping label attached”).
+  - Next steps & contact for questions.
+
+### 7. Documentation & Data Retention
+
+| Document | Retention Period | Who Owns | Storage |
+|----------|------------------|----------|---------|
+| Ticket Transcript | 5 years (or long‑term if legal claim pending) | Support & Legal | Encrypted CRM / Cloud |
+| E‑mail Attachments | 5 years | Support | Secure S3 / Share‑Point |
+| Escalation Forms | 5 years | Escalation Manager | CRM archival |
+| Customer Feedback | Until next quarterly review | CS Manager | CRM dashboards |
+
+All records must be GDPR‑compliant: only personal data needed for resolution is retained; auto‑destruct after retention ends.
+
+### 8. Key Performance Indicators (KPIs)
+
+| KPI | Target | Frequency |
+|-----|--------|-----------|
+| **Average Time to Acknowledge (TTA)** | ≤ 2 h | Monthly |
+| **Average Time to Resolve (TTR)** | ≤ 7 days (overall), ≤ 3 days (critical) | Monthly |
+| **First‑Contact Resolution (FCR)** | ≥ 70 % | Monthly |
+| **Escalation Rate** | ≤ 5 % of total complaints | Monthly |
+| **Customer Satisfaction (CSAT)** | ≥ 4.5/5 | Quarterly |
+
+### 9. Training & Competency
+
+- All new support agents must complete **Complaint Handling 101** (2 h) before starting live tickets.
+- Quarterly refresher courses cover: policy updates, product changes, escalation procedures.
+- Role‑play scenarios are assessed; score ≥ 90 % for advanced support certification.
+
+### 10. FAQ – Common Agent Questions
+
+| Question | Answer |
+|----------|--------|
+| *Can I process a refund without escalation if the amount is under $500?* | Yes, but verify with Finance via the “Refund Request” form before processing. |
+| *I don’t have a photo of the damage. What now?* | Offer a “self‑photos” request; if unavailable, we can still process a return based on description, but document risk. |
+| *What to do if a customer says they’ll “take legal action”?* | Escalate immediately to *Legal Counsel* and preserve all communication. |
+
+**Appendix A – Complaint Taxonomy**
+
+| Category | Examples | Next Step |
+|----------|----------|-----------|
+| **Product Quality** | Broken part, wrong color, not functioning | Warranty check → return / replacement |
+| **Delivery / Shipping** | Late delivery, lost package, damaged packaging | Log logistics ticket → shipping follow‑up |
+| **Billing** | Wrong amount, double charge | Verify invoice → refund or credit |
+| **Service / Support** | Unhelpful agent, delayed response | Escalate → Supervisor |
+| **Safety / Health** | Product caused injury | Immediate product recall process |
+| **Other / Miscellaneous** | Complaints about website usability | Escalate to UX team |
+
+---
+
+**End of Policy**
+
+Agents should keep a copy of this manual on their workspace, review the policy before each shift, and refer to it whenever they encounter uncertainties in complaint resolution.
+
+---
+
+**Appendix A – Complaint Taxonomy**
+
+| Category | Examples | Next Step |
+|----------|----------|-----------|
+| **Product Quality** | Broken part, wrong color, not functioning | Warranty check → return / replacement |
+| **Delivery / Shipping** | Late delivery, lost package, damaged packaging | Log logistics ticket → shipping follow‑up |
+| **Billing** | Wrong amount, double charge | Verify invoice → refund or credit |
+| **Service / Support** | Unhelpful agent, delayed response | Escalate → Supervisor |
+| **Safety / Health** | Product caused injury | Immediate product recall process |
+| **Other / Miscellaneous** | Complaints about website usability | Escalate to UX team |
+
+---
+
+**End of Policy**
+
+Agents should keep a copy of this manual on their workspace, review the policy before each shift, and refer to it whenever they encounter uncertainties in complaint resolution.","[{'role': 'user', 'content': 'I would like to return my order #12345. The shoes are broken.'}, {'role': 'assistant', 'content': 'Thank you for contacting us. I have logged your request under ticket #98765. May I have your order number to verify your identity?'}, {'role': 'user', 'content': ""Sure, it's 12345.""}, {'role': 'assistant', 'content': 'Thank you. Can you please describe the issue and if possible provide a photo of the damaged shoes?'}, {'role': 'user', 'content': 'The left shoe is cracked. I attached a photo.'}]","{'role': 'assistant', 'content': 'I see the damage. Since your order was placed within the last 30 days, you are eligible for a full refund. Would you like to proceed with a return? If so, we will send you a prepaid return shipping label. Once we receive the item, we will process the refund. Is there anything else I can help you with today?'}"
