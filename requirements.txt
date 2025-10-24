@@ -18,7 +18,7 @@ langchain-text-splitters
 langchain-openai
 langchain-chroma
 langchain-community
-datasets==3.6.0
+datasets
 matplotlib
 google-generativeai
 anthropic
@@ -34,6 +34,6 @@ setuptools
 speedtest-cli
 sentence_transformers
 feedparser
-protobuf==3.20.2
+protobuf
 wandb
 langgraph
