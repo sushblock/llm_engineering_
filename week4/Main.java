@@ -1,27 +1,59 @@
-public final class Main {
-private static final int A = 4;
-private static final int B = 1;
+public class Main {
+private static final long A = 1664525L;
+private static final long C = 1013904223L;
+private static final long MASK = 0xffffffffL;
 
-public static void main(String[] args) {
-final int iterations = 200_000_000;
-final long startNanos = System.nanoTime();
+private long value;
 
-double result = 1.0;
-final int a = A;
-final int b = B;
-
-// Fast dependency-reducing form: result += (a/(i*a - b) - a/(i*a + b))
-for (int i = 1; i <= iterations; i++) {
-final int denom1 = i * a - b;
-final int denom2 = i * a + b;
-// Reciprocal division
-result += (a / (double) denom1) - (a / (double) denom2);
+LCG(long seed) {
+this.value = seed;
 }
 
-final long endNanos = System.nanoTime();
-final double elapsedSeconds = (endNanos - startNanos) / 1_000_000_000.0;
+long next() {
+this.value = (A * this.value + C) & MASK;
+return this.value;
+}
+}
 
-System.out.printf("Result: %.12f%n", result);
-System.out.printf("Execution Time: %.6f seconds%n", elapsedSeconds);
+private static long maxSubarraySum(int n, long seed, int minVal, int maxVal) {
+LCG lcg = new LCG(seed);
+int range = maxVal - minVal + 1; // 21
+long currentSum = 0;
+long maxSum = Long.MIN_VALUE;
+for (int i = 0; i < n; i++) {
+long rnd = lcg.next();
+int val = (int) (rnd % range) + minVal;
+currentSum = Math.max(val, currentSum + val);
+if (currentSum > maxSum) {
+maxSum = currentSum;
+}
+}
+return maxSum;
+}
+
+private static long totalMaxSubarraySum(int n, long initialSeed, int minVal, int maxVal) {
+LCG lcg = new LCG(initialSeed);
+long total = 0;
+for (int i = 0; i < 20; i++) {
+long seed = lcg.next();
+total += maxSubarraySum(n, seed, minVal, maxVal);
+}
+return total;
+}
+
+public static void main(String[] args) {
+int n = 10000;
+long initialSeed = 42L;
+int minVal = -10;
+int maxVal = 10;
+
+long start = System.nanoTime();
+long result = totalMaxSubarraySum(n, initialSeed, minVal, maxVal);
+long end = System.nanoTime();
+
+double elapsed = (end - start) / 1_000_000_000.0;
+
+System.out.println("Total Maximum Subarray Sum (20 runs): " + result);
+System.out.printf("Execution Time: %.6f seconds%n", elapsed);
 }
 }
