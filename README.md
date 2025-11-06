@@ -66,6 +66,68 @@ ORIGINAL INSTRUCTIONS for people on the version prior to October 2025:
 - Mac people please follow the instructions here: [Original Mac instructions](setup/SETUP-mac.md)  
 - Linux people please follow the instructions here: [Original Linux instructions](setup/SETUP-linux.md)
 
+## UV Package Manager
+
+This project uses [uv](https://github.com/astral-sh/uv) for dependency management. All dependencies are defined in `pyproject.toml` and locked in `uv.lock` for reproducible builds.
+
+### Activating the Virtual Environment
+
+**Windows:**
+```bash
+.venv\Scripts\activate
+```
+
+**Mac/Linux:**
+```bash
+source .venv/bin/activate
+```
+
+### Common UV Commands
+
+**Add a new package:**
+```bash
+uv add package-name
+```
+
+**Remove a package:**
+```bash
+uv remove package-name
+```
+
+**Sync dependencies (install from pyproject.toml):**
+```bash
+uv sync
+```
+
+**Run a command without activating the venv:**
+```bash
+uv run python your_script.py
+uv run jupyter notebook
+```
+
+**Run Jupyter notebooks:**
+```bash
+# Either activate the venv first
+.venv\Scripts\activate
+jupyter notebook
+
+# Or run directly with uv
+uv run jupyter notebook
+```
+
+### Working with Notebooks
+
+When working with Jupyter notebooks in VS Code or other IDEs:
+1. Make sure to select the correct Python kernel pointing to `.venv\Scripts\python.exe` (Windows) or `.venv/bin/python` (Mac/Linux)
+2. All required packages are already installed in the virtual environment
+
+### Generating requirements.txt (Optional)
+
+If you need a `requirements.txt` file for compatibility with other tools:
+```bash
+uv pip compile pyproject.toml -o requirements.txt
+```
+
 ### An important point on API costs (which are optional! No need to spend if you don't wish)
 
 During the course, I'll suggest you try out the leading models at the forefront of progress, known as the Frontier models. I'll also suggest you run open-source models using Google Colab. These services have some charges, but I'll keep cost minimal - like, a few cents at a time. And I'll provide alternatives if you'd prefer not to use them.
