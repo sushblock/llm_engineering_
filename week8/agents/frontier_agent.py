@@ -27,10 +27,15 @@ class FrontierAgent(Agent):
         And setting up the vector encoding model
         """
         self.log("Initializing Frontier Agent")
-        deepseek_api_key = os.getenv("DEEPSEEK_API_KEY")
-        if deepseek_api_key:
-            self.client = OpenAI(api_key=deepseek_api_key, base_url="https://api.deepseek.com")
-            self.MODEL = "deepseek-chat"
+        #deepseek_api_key = os.getenv("DEEPSEEK_API_KEY")
+        ollama_api_key = "ollama"
+        # if deepseek_api_key:
+        #     self.client = OpenAI(api_key=deepseek_api_key, base_url="https://api.deepseek.com")
+        #     self.MODEL = "deepseek-chat"
+        #     self.log("Frontier Agent is set up with DeepSeek")
+        if ollama_api_key:
+            self.client = OpenAI(api_key=ollama_api_key, base_url="http://localhost:11434/v1")
+            self.MODEL = "deepseek-v3.1:671b-cloud"
             self.log("Frontier Agent is set up with DeepSeek")
         else:
             self.client = OpenAI()

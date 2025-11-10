@@ -8,8 +8,16 @@ RESET = "\033[0m"
 COLOR_MAP = {"red":RED, "orange": YELLOW, "green": GREEN}
 
 class Tester:
+    """Test the performance of a price prediction model.
+    Attributes:
+        predictor: A function that takes a datapoint and returns a price estimate.
+        data: A list of datapoints to test the predictor on.
+        title: A title for the test run.
+        size: The number of datapoints to test.
+    """
 
     def __init__(self, predictor, data, title=None, size=250):
+        """Initialize the Tester with a predictor function, dataset, title, and size."""
         self.predictor = predictor
         self.data = data
         self.title = title or predictor.__name__.replace("_", " ").title()
@@ -21,6 +29,7 @@ class Tester:
         self.colors = []
 
     def color_for(self, error, truth):
+        """Determine the color for the datapoint based on the error and ground truth."""
         if error<40 or error/truth < 0.2:
             return "green"
         elif error<80 or error/truth < 0.4:
@@ -29,6 +38,7 @@ class Tester:
             return "red"
     
     def run_datapoint(self, i):
+        """Run the predictor on a single datapoint and log the results."""
         datapoint = self.data[i]
         guess = self.predictor(datapoint)
         truth = datapoint.price
@@ -45,6 +55,7 @@ class Tester:
         print(f"{COLOR_MAP[color]}{i+1}: Guess: ${guess:,.2f} Truth: ${truth:,.2f} Error: ${error:,.2f} SLE: {sle:,.2f} Item: {title}{RESET}")
 
     def chart(self, title):
+        """Create a scatter plot of the model's predictions vs. the ground truth."""
         max_error = max(self.errors)
         plt.figure(figsize=(12, 8))
         max_val = max(max(self.truths), max(self.guesses))
@@ -58,6 +69,7 @@ class Tester:
         plt.show()
 
     def report(self):
+        """Generate a report of the model's performance."""
         average_error = sum(self.errors) / self.size
         rmsle = math.sqrt(sum(self.sles) / self.size)
         hits = sum(1 for color in self.colors if color=="green")
@@ -65,6 +77,7 @@ class Tester:
         self.chart(title)
 
     def run(self):
+        """Run the tester on the dataset."""
         self.error = 0
         for i in range(self.size):
             self.run_datapoint(i)
@@ -72,4 +85,5 @@ class Tester:
 
     @classmethod
     def test(cls, function, data):
+        """Class method to run the tester on a given function and dataset."""
         cls(function, data).run()

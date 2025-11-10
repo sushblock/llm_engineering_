@@ -21,7 +21,7 @@ FINETUNED_MODEL = f"{HF_USER}/{PROJECT_RUN_NAME}"
 CACHE_DIR = "/cache"
 
 # Change this to 1 if you want Modal to be always running, otherwise it will go cold after 2 mins
-MIN_CONTAINERS = 0
+MIN_CONTAINERS = 1
 
 QUESTION = "How much does this cost to the nearest dollar?"
 PREFIX = "Price is $"

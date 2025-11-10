@@ -10,7 +10,9 @@ CEILING_CHARS = MAX_TOKENS * 7
 
 class Item:
     """
-    An Item is a cleaned, curated datapoint of a Product with a Price
+    An Item is a cleaned, curated datapoint of a Product with a Price. 
+    It contains methods to parse raw data into a prompt suitable for training
+    a language model to predict prices based on product descriptions.
     """
     
     tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL, trust_remote_code=True)
@@ -33,7 +35,7 @@ class Item:
 
     def scrub_details(self):
         """
-        Clean up the details string by removing common text that doesn't add value
+        Clean up the details string by removing common text that doesn't add value. 
         """
         details = self.details
         for remove in self.REMOVALS:
